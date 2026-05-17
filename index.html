@@ -1,0 +1,2723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Bankable — Most business owners don't have a funding problem first. They have a readiness problem.</title>
+<meta name="description" content="Run your free 12-minute Bankable IQ scan. No credit pull. No bank login. Bankable installs seven systems for your business — Capital Readiness, Multi-Round Funding, Growth Marketing, Financial Operating, Bankable Tax, Bankable Academy, and Exit Readiness." />
+<!--
+  bankableiq.io homepage mockup — v5 FINAL
+  Adds to v4:
+    1. 7 SYSTEMS rebrand (verb-first "install"): Capital Readiness, Multi-Round Funding,
+       Growth Marketing, Financial Operating, Bankable Tax, Bankable Academy, Exit Readiness.
+    2. Instead.com layout patterns: chat-UI AI Coach showcase, persona question cards,
+       big stat hero numbers, embedded live-product UI screenshots, "coming soon" tags,
+       nationwide coverage visualization, three-tier pricing with feature checklists,
+       final CTA pattern, period-cadence sub-headline.
+    3. Showcase section: The Multi-Round Funding System (IE1 → IE2 → IE3 → Institutional).
+    4. New motion: typing animation, line-draw timeline, stat count-up, map state-fill.
+  Locked from prior decisions:
+    - Inter Display (CDN with system fallback)
+    - H1 verbatim from BANKABLE-NARRATIVE.md
+    - Real Color SVG inlined nav + footer + final CTA
+    - Dual-door fork
+    - Composite testimonial disclaimer + Estimate label + not-lender disclosures
+    - Authority marker + Kennedy PS line
+    - All 9 avatars reachable
+-->
+
+<link rel="preconnect" href="https://rsms.me/" />
+<link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%232d388a'/><stop offset='1' stop-color='%2300aeef'/></linearGradient></defs><g fill='url(%23g)' transform='translate(7 7) scale(0.86)'><path fill-rule='evenodd' clip-rule='evenodd' d='M80.11 49.695c.003 5.951 1.481 10.771 3.303 10.771 1.823 0 3.302-4.824 3.305-10.768-.003-5.951-1.479-10.773-3.303-10.773-1.824 0-3.308 4.822-3.305 10.77z'/><path fill-rule='evenodd' clip-rule='evenodd' d='M39.138 14.154c-15.075 6.26-25.529 19.93-25.529 35.779-.004 15.852 10.454 29.52 25.536 35.777-8.641-7.478-14.381-20.71-14.381-35.776s5.744-28.297 14.374-35.78z'/><path fill-rule='evenodd' clip-rule='evenodd' d='M49.349 10.23c-7.066 0-12.803 17.854-12.803 39.857 0 22.016 5.736 39.859 12.808 39.861 3.491-.002 6.66-4.367 8.969-11.438 1.954 4.756 4.414 7.598 7.084 7.598 6.367.002 11.532-16.066 11.527-35.883.005-19.816-5.156-35.887-11.521-35.879-2.651 0-5.093 2.797-7.041 7.484-2.315-7.162-5.501-11.596-9.023-11.6zm25.876 39.997c.005 11.121-2.764 20.143-6.174 20.143-3.412 0-6.176-9.023-6.176-20.139 0-11.127 2.764-20.146 6.176-20.15 3.414.003 6.178 9.021 6.174 20.146zM57.792 23.318c-2.395 6.576-3.907 16.191-3.907 26.908-.001 10.623 1.484 20.166 3.841 26.736-1.15 1.559-2.418 2.424-3.748 2.424-5.202-.004-9.414-13.117-9.414-29.299 0-16.174 4.212-29.293 9.407-29.293 1.362.003 2.655.907 3.821 2.524z'/></g></svg>" />
+
+<style>
+  :root {
+    color-scheme: light;
+    --bnk-primary: #137DC5;
+    --bnk-primary-deep: #0E5E94;
+    --bnk-grad-start: #2D388A;
+    --bnk-grad-end: #00AEEF;
+    --bnk-neutral: #E6E8EB;
+    --bnk-text-primary: #0F172A;
+    --bnk-text-secondary: #475569;
+    --bnk-text-muted: #64748B;
+    --bnk-surface-page: #FFFFFF;
+    --bnk-surface-raised: #F8FAFC;
+    --bnk-surface-sunken: #F1F5F9;
+    --bnk-border-default: #E2E8F0;
+    --bnk-border-strong: #CBD5E1;
+    --bnk-info-surface: #EFF6FF;
+    --bnk-success: #15803D;
+    --bnk-success-surface: #F0FDF4;
+    --bnk-warning: #B45309;
+    --bnk-warning-surface: #FFFBEB;
+    --bnk-error: #B91C1C;
+
+    --font-display: 'Inter Display', 'InterDisplay', 'Inter var', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    --font-body: 'Inter var', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    --font-mono: 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace;
+
+    --container-max: 1280px;
+    --bnk-gradient: linear-gradient(135deg, #2D388A 0%, #00AEEF 100%);
+    --bnk-gradient-hover: linear-gradient(135deg, #3A47AD 0%, #1AB8F1 100%);
+    --bnk-gradient-h: linear-gradient(90deg, #2D388A 0%, #00AEEF 100%);
+    --bnk-gradient-soft: linear-gradient(135deg, rgba(45,56,138,0.08) 0%, rgba(0,174,239,0.08) 100%);
+    --bnk-gradient-wash: linear-gradient(135deg, rgba(45,56,138,0.12) 0%, rgba(0,174,239,0.10) 100%);
+
+    --radius-sm: 6px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-xl: 16px;
+    --radius-2xl: 24px;
+
+    --shadow-sm: 0 1px 2px rgba(15,23,42,0.04);
+    --shadow-md: 0 4px 12px rgba(15,23,42,0.06), 0 1px 3px rgba(15,23,42,0.04);
+    --shadow-lg: 0 16px 32px rgba(15,23,42,0.08), 0 4px 8px rgba(15,23,42,0.04);
+    --shadow-xl: 0 24px 64px rgba(15,23,42,0.12), 0 8px 16px rgba(15,23,42,0.06);
+    --shadow-glow: 0 0 0 1px rgba(19,125,197,0.12), 0 12px 40px rgba(19,125,197,0.18);
+
+    --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+    --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+    --ease-snappy: cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; padding: 0;
+    background: var(--bnk-surface-page);
+    color: var(--bnk-text-primary);
+    font-family: var(--font-body);
+    font-size: 17px; line-height: 1.6;
+    -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "ss01" 1, "cv11" 1;
+    overflow-x: hidden;
+  }
+  @supports (font-variation-settings: normal) {
+    body { font-family: 'Inter var', system-ui, sans-serif; }
+  }
+  ::selection { background: rgba(19,125,197,0.18); color: var(--bnk-text-primary); }
+  a { color: var(--bnk-primary); text-decoration: none; transition: color 180ms var(--ease-out); }
+  a:hover { color: var(--bnk-primary-deep); }
+  img, svg { display: block; max-width: 100%; }
+  button { font-family: inherit; cursor: pointer; }
+
+  .container { width: 100%; max-width: var(--container-max); margin: 0 auto; padding: 0 20px; }
+  @media (min-width: 640px) { .container { padding: 0 28px; } }
+  @media (min-width: 1024px) { .container { padding: 0 40px; } }
+
+  /* TYPE */
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-family: var(--font-body); font-size: 12px; font-weight: 600;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--bnk-primary); margin: 0 0 20px;
+  }
+  .eyebrow::before { content: ""; display: inline-block; width: 18px; height: 1px; background: currentColor; opacity: 0.6; }
+  @media (min-width: 768px) { .eyebrow { font-size: 13px; } }
+  .eyebrow.on-dark { color: rgba(255,255,255,0.85); }
+  .eyebrow.on-dark::before { background: rgba(255,255,255,0.4); }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display); color: var(--bnk-text-primary);
+    margin: 0 0 16px; letter-spacing: -0.02em;
+  }
+  .h-display {
+    font-family: var(--font-display);
+    font-size: 38px; line-height: 1.04; font-weight: 700; letter-spacing: -0.035em;
+  }
+  @media (min-width: 640px) { .h-display { font-size: 48px; } }
+  @media (min-width: 1024px) { .h-display { font-size: 62px; } }
+  @media (min-width: 1280px) { .h-display { font-size: 72px; } }
+
+  .h1 { font-family: var(--font-display); font-size: 32px; line-height: 1.08; font-weight: 700; letter-spacing: -0.028em; }
+  @media (min-width: 1024px) { .h1 { font-size: 48px; } }
+  .h2 { font-family: var(--font-display); font-size: 28px; line-height: 1.12; font-weight: 700; letter-spacing: -0.022em; }
+  @media (min-width: 1024px) { .h2 { font-size: 40px; } }
+  .h3 { font-family: var(--font-display); font-size: 22px; line-height: 1.22; font-weight: 600; letter-spacing: -0.015em; }
+  @media (min-width: 1024px) { .h3 { font-size: 28px; } }
+  .h4 { font-family: var(--font-display); font-size: 19px; line-height: 1.3; font-weight: 600; letter-spacing: -0.01em; }
+  @media (min-width: 1024px) { .h4 { font-size: 22px; } }
+
+  .lede {
+    font-family: var(--font-body); font-size: 17px; line-height: 1.55;
+    color: var(--bnk-text-secondary); margin: 0 0 24px; max-width: 66ch;
+  }
+  @media (min-width: 1024px) { .lede { font-size: 20px; } }
+  p { margin: 0 0 16px; color: var(--bnk-text-secondary); }
+  .muted { color: var(--bnk-text-muted); font-size: 13px; }
+  .tab-nums { font-variant-numeric: tabular-nums; font-feature-settings: "tnum" 1; }
+  .gradient-text {
+    background: var(--bnk-gradient); -webkit-background-clip: text; background-clip: text;
+    color: transparent; -webkit-text-fill-color: transparent;
+  }
+
+  section { padding: 64px 0; position: relative; }
+  @media (min-width: 768px) { section { padding: 88px 0; } }
+  @media (min-width: 1024px) { section { padding: 112px 0; } }
+
+  /* PERIOD-CADENCE sub-headline (Instead-style) */
+  .period-cadence {
+    font-family: var(--font-display); font-size: 20px; line-height: 1.35;
+    color: var(--bnk-text-primary); font-weight: 500; letter-spacing: -0.015em;
+    margin: 0 0 18px; max-width: 56ch;
+  }
+  @media (min-width: 1024px) { .period-cadence { font-size: 26px; } }
+  .period-cadence .pc-strong { color: var(--bnk-text-primary); font-weight: 700; }
+  .period-cadence .pc-muted { color: var(--bnk-text-muted); }
+
+  /* BUTTONS */
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    padding: 14px 22px; border-radius: var(--radius-md); font-weight: 600; font-size: 16px;
+    border: none; cursor: pointer; transition: all 200ms var(--ease-out); white-space: nowrap;
+    min-height: 48px; line-height: 1.2; text-decoration: none;
+  }
+  .btn-primary { background: var(--bnk-gradient); color: #fff; box-shadow: var(--shadow-md); }
+  .btn-primary:hover { background: var(--bnk-gradient-hover); color: #fff; transform: translateY(-1px); box-shadow: var(--shadow-lg); }
+  .btn-primary:active { transform: scale(0.98); }
+  .btn-secondary { background: #fff; color: var(--bnk-primary); border: 2px solid var(--bnk-primary); }
+  .btn-secondary:hover { background: var(--bnk-info-surface); color: var(--bnk-primary-deep); transform: translateY(-1px); }
+  .btn-ghost { background: transparent; color: var(--bnk-primary); padding: 10px 14px; }
+  .btn-ghost:hover { color: var(--bnk-primary-deep); }
+  .btn-lg { padding: 18px 28px; font-size: 17px; min-height: 56px; }
+  .btn-arrow::after { content: "→"; transition: transform 180ms var(--ease-out); }
+  .btn-arrow:hover::after { transform: translateX(4px); }
+
+  /* RELEASE TAGS (Instead pattern) */
+  .release-tag {
+    display: inline-flex; align-items: center; gap: 5px;
+    padding: 3px 9px; border-radius: 999px;
+    font-size: 10.5px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    background: var(--bnk-warning-surface); color: var(--bnk-warning);
+    border: 1px solid rgba(180,83,9,0.18); vertical-align: middle;
+  }
+  .release-tag.live { background: var(--bnk-success-surface); color: var(--bnk-success); border-color: rgba(21,128,61,0.18); }
+  .release-tag.soon { background: var(--bnk-info-surface); color: var(--bnk-primary); border-color: rgba(19,125,197,0.18); }
+  .release-tag::before { content: ""; width: 6px; height: 6px; border-radius: 999px; background: currentColor; }
+
+  /* HEADER */
+  .site-header {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(255,255,255,0.85); backdrop-filter: saturate(180%) blur(14px);
+    -webkit-backdrop-filter: saturate(180%) blur(14px);
+    border-bottom: 1px solid transparent; transition: border-color 200ms var(--ease-out), background 200ms var(--ease-out);
+  }
+  .site-header.scrolled { background: rgba(255,255,255,0.95); border-bottom-color: var(--bnk-border-default); }
+  .nav-inner { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; gap: 24px; }
+  .logo-wrap { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+  .logo-wrap svg { height: 30px; width: auto; }
+  @media (min-width: 1024px) { .logo-wrap svg { height: 36px; } }
+  .nav-links { display: none; gap: 28px; align-items: center; }
+  @media (min-width: 980px) { .nav-links { display: flex; } }
+  .nav-link { color: var(--bnk-text-primary); font-size: 15px; font-weight: 500; transition: color 180ms; }
+  .nav-link:hover { color: var(--bnk-primary); }
+  .nav-cta-wrap { display: flex; align-items: center; gap: 12px; }
+  .menu-toggle { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border: 1px solid var(--bnk-border-default); background: #fff; border-radius: var(--radius-md); }
+  @media (min-width: 980px) { .menu-toggle { display: none; } }
+  .menu-toggle svg { width: 22px; height: 22px; stroke: var(--bnk-text-primary); }
+  .nav-cta { display: none; }
+  @media (min-width: 620px) { .nav-cta { display: inline-flex; } }
+
+  .mobile-menu {
+    position: fixed; inset: 0; background: rgba(15,23,42,0.45); z-index: 200;
+    opacity: 0; pointer-events: none; transition: opacity 200ms var(--ease-out);
+  }
+  .mobile-menu.open { opacity: 1; pointer-events: auto; }
+  .mobile-menu-panel {
+    position: absolute; top: 0; right: 0; height: 100%; width: min(86vw, 340px);
+    background: #fff; padding: 24px; display: flex; flex-direction: column; gap: 8px;
+    transform: translateX(100%); transition: transform 240ms var(--ease-snappy);
+    box-shadow: var(--shadow-xl);
+  }
+  .mobile-menu.open .mobile-menu-panel { transform: translateX(0); }
+  .mobile-menu-close { align-self: flex-end; background: transparent; border: none; padding: 8px; }
+  .mobile-menu a { padding: 14px 12px; border-radius: var(--radius-md); color: var(--bnk-text-primary); font-weight: 500; }
+  .mobile-menu a:hover { background: var(--bnk-surface-raised); }
+  .mobile-menu .btn { margin-top: 12px; width: 100%; }
+
+  /* S1 HERO */
+  .hero { padding: 52px 0 56px; position: relative; overflow: hidden; }
+  @media (min-width: 1024px) { .hero { padding: 88px 0 96px; } }
+  .hero::before {
+    content: ""; position: absolute; inset: 0;
+    background:
+      radial-gradient(60% 50% at 90% 10%, rgba(0,174,239,0.10), transparent 70%),
+      radial-gradient(50% 40% at 0% 90%, rgba(45,56,138,0.08), transparent 70%);
+    pointer-events: none; z-index: 0;
+    animation: ambientShift 18s ease-in-out infinite alternate;
+  }
+  @keyframes ambientShift { from { transform: translate3d(0,0,0); } to { transform: translate3d(-12px,8px,0); } }
+  .hero .container { position: relative; z-index: 1; }
+  .hero-grid { display: grid; grid-template-columns: 1fr; gap: 40px; align-items: center; }
+  @media (min-width: 1024px) { .hero-grid { grid-template-columns: 1.25fr 1fr; gap: 56px; } }
+
+  .hero-headline { margin: 0 0 18px; }
+  .hero-sub { font-size: 17px; line-height: 1.55; color: var(--bnk-text-secondary); max-width: 60ch; margin: 0 0 18px; }
+  @media (min-width: 1024px) { .hero-sub { font-size: 19px; } }
+  .hero-sub strong { color: var(--bnk-text-primary); font-weight: 600; }
+
+  .def-badge {
+    display: inline-flex; align-items: flex-start; gap: 10px;
+    background: var(--bnk-info-surface); border: 1px solid rgba(19,125,197,0.18);
+    border-radius: var(--radius-lg); padding: 12px 14px;
+    font-size: 13.5px; line-height: 1.5; color: var(--bnk-text-secondary);
+    max-width: 580px; margin: 0 0 22px;
+  }
+  .def-badge .def-icon {
+    flex-shrink: 0; width: 28px; height: 28px; border-radius: var(--radius-sm);
+    background: var(--bnk-gradient); color: #fff; display: grid; place-items: center;
+    font-size: 13px; font-weight: 800; font-family: var(--font-display);
+  }
+  .def-badge strong { color: var(--bnk-text-primary); font-weight: 700; }
+  .def-badge em { font-style: italic; color: var(--bnk-text-muted); font-size: 12.5px; }
+
+  .hero-cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 18px; }
+  .hero-cta-row .btn { flex: 1 1 auto; min-width: 200px; }
+  @media (min-width: 640px) { .hero-cta-row .btn { flex: 0 0 auto; } }
+  .hero-trust { font-size: 13px; color: var(--bnk-text-muted); line-height: 1.5; max-width: 56ch; }
+  .hero-trust strong { color: var(--bnk-text-secondary); font-weight: 600; }
+
+  .hero-visual { order: 2; }
+  @media (min-width: 1024px) { .hero-visual { order: initial; } }
+
+  /* SCORE RING */
+  .score-card {
+    background: #fff; border: 1px solid var(--bnk-border-default); border-radius: var(--radius-2xl);
+    padding: 26px; box-shadow: var(--shadow-xl); position: relative; overflow: hidden;
+  }
+  .score-card::before {
+    content: ""; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+    background: var(--bnk-gradient);
+  }
+  .score-card-head { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 16px; }
+  .score-card-title { font-size: 13px; font-weight: 600; color: var(--bnk-text-secondary); text-transform: uppercase; letter-spacing: 0.08em; margin: 0 0 4px; }
+  .score-card-sub { font-size: 13px; color: var(--bnk-text-muted); margin: 0; }
+  .score-est-pill {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 4px 10px; background: var(--bnk-warning-surface); color: var(--bnk-warning);
+    border-radius: 999px; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em;
+    border: 1px solid rgba(180,83,9,0.18);
+  }
+  .score-ring-wrap { display: grid; place-items: center; margin: 8px 0 16px; position: relative; }
+  .score-ring { width: 200px; height: 200px; }
+  @media (min-width: 1024px) { .score-ring { width: 220px; height: 220px; } }
+  .score-ring circle.track { fill: none; stroke: var(--bnk-surface-sunken); stroke-width: 16; }
+  .score-ring circle.fill { fill: none; stroke: url(#scoreGrad); stroke-width: 16; stroke-linecap: round;
+    transform: rotate(-90deg); transform-origin: 50% 50%; transition: stroke-dashoffset 1.5s var(--ease-out); }
+  .score-ring-num { position: absolute; inset: 0; display: grid; place-items: center; }
+  .score-ring-num-inner { text-align: center; }
+  .score-ring-num .num { font-family: var(--font-display); font-size: 60px; font-weight: 700; letter-spacing: -0.04em; line-height: 1; font-variant-numeric: tabular-nums; }
+  .score-ring-num .denom { font-size: 13px; color: var(--bnk-text-muted); margin-top: 2px; }
+  .score-meta { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; padding-top: 14px; border-top: 1px solid var(--bnk-border-default); }
+  .score-meta-item .lbl { font-size: 11px; color: var(--bnk-text-muted); text-transform: uppercase; letter-spacing: 0.08em; margin: 0 0 2px; }
+  .score-meta-item .val { font-size: 14px; color: var(--bnk-text-primary); font-weight: 600; }
+
+  /* AI COACH CHAT-UI (Instead-style) */
+  .coach-band { background: linear-gradient(180deg, var(--bnk-surface-page) 0%, var(--bnk-surface-raised) 100%); }
+  .coach-grid { display: grid; grid-template-columns: 1fr; gap: 36px; align-items: center; }
+  @media (min-width: 1024px) { .coach-grid { grid-template-columns: 1fr 1.1fr; gap: 56px; } }
+  .coach-chat {
+    background: #fff; border: 1px solid var(--bnk-border-default); border-radius: var(--radius-2xl);
+    box-shadow: var(--shadow-xl); overflow: hidden; max-width: 620px;
+  }
+  .coach-chat-head {
+    background: #0F172A; color: #fff; padding: 16px 20px;
+    display: flex; align-items: center; gap: 12px;
+  }
+  .coach-chat-head .coach-avatar {
+    width: 36px; height: 36px; border-radius: 999px; background: var(--bnk-gradient);
+    display: grid; place-items: center; font-family: var(--font-display); font-weight: 800; font-size: 14px;
+    flex-shrink: 0;
+  }
+  .coach-chat-head .coach-title { font-weight: 700; font-size: 14px; line-height: 1.2; }
+  .coach-chat-head .coach-sub { font-size: 11.5px; color: #94A3B8; margin-top: 2px; }
+  .coach-status-pill {
+    margin-left: auto; display: inline-flex; align-items: center; gap: 5px;
+    padding: 3px 9px; border-radius: 999px; background: rgba(0,174,239,0.16); color: #00AEEF;
+    font-size: 10.5px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;
+  }
+  .coach-status-pill::before { content: ""; width: 6px; height: 6px; border-radius: 999px; background: #00AEEF; }
+  .coach-chat-body { padding: 22px; display: flex; flex-direction: column; gap: 14px; background: #F8FAFC; min-height: 360px; }
+  .chat-msg { display: flex; gap: 10px; max-width: 86%; }
+  .chat-msg.user { align-self: flex-end; flex-direction: row-reverse; }
+  .chat-bubble {
+    padding: 12px 16px; border-radius: 14px; font-size: 14px; line-height: 1.5;
+    background: #fff; border: 1px solid var(--bnk-border-default); color: var(--bnk-text-primary);
+    box-shadow: var(--shadow-sm);
+  }
+  .chat-msg.user .chat-bubble { background: var(--bnk-gradient); color: #fff; border-color: transparent; border-top-right-radius: 4px; }
+  .chat-msg.ai .chat-bubble { border-top-left-radius: 4px; }
+  .chat-msg-avatar {
+    width: 28px; height: 28px; border-radius: 999px; flex-shrink: 0; display: grid; place-items: center;
+    font-family: var(--font-display); font-size: 11px; font-weight: 700;
+  }
+  .chat-msg.user .chat-msg-avatar { background: #CBD5E1; color: #0F172A; }
+  .chat-msg.ai .chat-msg-avatar { background: var(--bnk-gradient); color: #fff; }
+  .chat-bubble strong { color: inherit; font-weight: 700; }
+  .chat-bubble .chat-step { display: block; padding: 6px 0; font-size: 13px; }
+  .chat-bubble .chat-step::before { content: "→"; color: var(--bnk-primary); font-weight: 700; margin-right: 6px; }
+  .chat-msg.user .chat-bubble .chat-step::before { color: #fff; }
+  .chat-bubble .chat-reasoning {
+    margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--bnk-border-default);
+    font-size: 12px; color: var(--bnk-text-muted); font-style: italic;
+  }
+  .chat-typing { display: inline-flex; align-items: center; gap: 4px; padding: 4px 0; }
+  .chat-typing span {
+    width: 7px; height: 7px; border-radius: 999px; background: var(--bnk-text-muted);
+    animation: chatBlink 1.2s infinite;
+  }
+  .chat-typing span:nth-child(2) { animation-delay: 0.2s; }
+  .chat-typing span:nth-child(3) { animation-delay: 0.4s; }
+  @keyframes chatBlink { 0%, 60%, 100% { opacity: 0.3; } 30% { opacity: 1; } }
+  .coach-chat-input {
+    padding: 14px 18px; border-top: 1px solid var(--bnk-border-default); background: #fff;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .coach-chat-input input {
+    flex: 1; border: 1px solid var(--bnk-border-default); background: var(--bnk-surface-raised);
+    padding: 10px 14px; border-radius: 999px; font-family: inherit; font-size: 13.5px;
+    color: var(--bnk-text-primary);
+  }
+  .coach-chat-input input::placeholder { color: var(--bnk-text-muted); }
+  .coach-chat-input .send-btn {
+    width: 36px; height: 36px; border-radius: 999px; background: var(--bnk-gradient);
+    border: none; color: #fff; display: grid; place-items: center;
+  }
+  .coach-chat-input .send-btn svg { width: 16px; height: 16px; }
+  .coach-chat-foot { padding: 12px 18px; background: #fff; border-top: 1px solid var(--bnk-border-default); font-size: 11.5px; color: var(--bnk-text-muted); text-align: center; }
+  .coach-chat-foot a { color: var(--bnk-primary); font-weight: 600; }
+
+  /* PERSONA QUESTION CARDS (Instead-style) */
+  .persona-band { background: #fff; }
+  .persona-grid { display: grid; grid-template-columns: 1fr; gap: 22px; max-width: 1140px; margin: 0 auto; }
+  @media (min-width: 768px) { .persona-grid { grid-template-columns: repeat(3, 1fr); } }
+  .persona-card {
+    background: #fff; border: 1px solid var(--bnk-border-default); border-radius: var(--radius-2xl);
+    padding: 28px; display: flex; flex-direction: column; gap: 16px;
+    transition: transform 240ms var(--ease-out), box-shadow 240ms var(--ease-out), border-color 240ms;
+    position: relative; overflow: hidden; min-height: 320px;
+  }
+  .persona-card::before {
+    content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--bnk-gradient);
+    transform: scaleX(0); transform-origin: left; transition: transform 320ms var(--ease-out);
+  }
+  .persona-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: var(--bnk-border-strong); }
+  .persona-card:hover::before { transform: scaleX(1); }
+  .persona-tag {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 11.5px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--bnk-primary);
+  }
+  .persona-tag .persona-dot { width: 8px; height: 8px; border-radius: 999px; background: var(--bnk-gradient); }
+  .persona-card h3 { font-size: 19px; margin: 0 0 4px; line-height: 1.25; }
+  .persona-sample {
+    background: var(--bnk-surface-raised); border: 1px solid var(--bnk-border-default);
+    border-radius: var(--radius-md); padding: 14px 16px; font-size: 14px; line-height: 1.5;
+    color: var(--bnk-text-primary); font-style: italic; position: relative;
+  }
+  .persona-sample::before {
+    content: ""; position: absolute; left: 18px; bottom: -8px; width: 14px; height: 14px;
+    background: var(--bnk-surface-raised); border-right: 1px solid var(--bnk-border-default);
+    border-bottom: 1px solid var(--bnk-border-default); transform: rotate(45deg);
+  }
+  .persona-sample-label { font-size: 11px; color: var(--bnk-text-muted); font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 6px; }
+  .persona-cta { margin-top: auto; }
+  .persona-meta { font-size: 12px; color: var(--bnk-text-muted); }
+
+  /* STATS BAND (Instead big numbers) */
+  .big-stats-band { background: #0F172A; color: #fff; padding: 64px 0; position: relative; overflow: hidden; }
+  @media (min-width: 1024px) { .big-stats-band { padding: 96px 0; } }
+  .big-stats-band::before {
+    content: ""; position: absolute; inset: 0;
+    background:
+      radial-gradient(50% 40% at 80% 20%, rgba(0,174,239,0.14), transparent 70%),
+      radial-gradient(50% 40% at 20% 80%, rgba(45,56,138,0.18), transparent 70%);
+    pointer-events: none;
+  }
+  .big-stats-band .container { position: relative; z-index: 1; }
+  .big-stats-head { text-align: center; max-width: 720px; margin: 0 auto 44px; }
+  .big-stats-head h2 { color: #fff; }
+  .big-stats-head p { color: #CBD5E1; }
+  .big-stats-grid {
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px;
+  }
+  @media (min-width: 768px) { .big-stats-grid { grid-template-columns: repeat(3, 1fr); gap: 28px; } }
+  @media (min-width: 1024px) { .big-stats-grid { grid-template-columns: repeat(6, 1fr); gap: 18px; } }
+  .big-stat {
+    text-align: center; padding: 18px 12px; border-radius: var(--radius-lg);
+    background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);
+  }
+  .big-stat-num {
+    font-family: var(--font-display); font-weight: 800; font-size: 36px;
+    background: linear-gradient(135deg, #fff 0%, #00AEEF 100%);
+    -webkit-background-clip: text; background-clip: text;
+    color: transparent; -webkit-text-fill-color: transparent;
+    letter-spacing: -0.03em; line-height: 1; font-variant-numeric: tabular-nums;
+  }
+  @media (min-width: 1024px) { .big-stat-num { font-size: 52px; } }
+  .big-stat-lbl { font-size: 12px; color: #CBD5E1; margin-top: 8px; line-height: 1.4; }
+  .illustrative-foot { font-size: 12px; color: #64748B; font-style: italic; text-align: center; margin: 24px auto 0; max-width: 64ch; }
+
+  /* DUAL DOOR FORK */
+  .fork-band { background: #fff; }
+  .fork-head { text-align: center; max-width: 720px; margin: 0 auto 40px; }
+  .fork-grid { display: grid; grid-template-columns: 1fr; gap: 24px; max-width: 1080px; margin: 0 auto; }
+  @media (min-width: 768px) { .fork-grid { grid-template-columns: 1fr 1fr; gap: 28px; } }
+  .door-card {
+    background: #fff; border: 1px solid var(--bnk-border-default); border-radius: var(--radius-2xl);
+    padding: 36px; position: relative; overflow: hidden;
+    transition: transform 280ms var(--ease-out), box-shadow 280ms var(--ease-out), border-color 280ms;
+    display: flex; flex-direction: column; gap: 16px; min-height: 360px;
+  }
+  .door-card::before {
+    content: ""; position: absolute; top: 0; left: 0; right: 0; height: 6px;
+    background: var(--bnk-gradient);
+  }
+  .door-card::after {
+    content: ""; position: absolute; inset: 0;
+    background: var(--bnk-gradient-soft); opacity: 0;
+    transition: opacity 400ms var(--ease-out); pointer-events: none; z-index: 0;
+  }
+  .door-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-xl); border-color: var(--bnk-primary); }
+  .door-card:hover::after { opacity: 1; }
+  .door-card > * { position: relative; z-index: 1; }
+  .door-eyebrow { font-size: 12px; font-weight: 700; color: var(--bnk-primary); letter-spacing: 0.14em; text-transform: uppercase; }
+  .door-icon {
+    width: 56px; height: 56px; border-radius: var(--radius-lg);
+    background: var(--bnk-gradient); color: #fff; display: grid; place-items: center;
+  }
+  .door-icon svg { width: 28px; height: 28px; }
+  .door-card h3 { font-size: 24px; line-height: 1.2; margin: 0 0 4px; }
+  @media (min-width: 1024px) { .door-card h3 { font-size: 28px; } }
+  .door-card .door-quote { font-size: 16px; line-height: 1.5; color: var(--bnk-text-secondary); font-style: italic; margin: 0; }
+  .door-card ul { list-style: none; padding: 0; margin: 4px 0 0; display: flex; flex-direction: column; gap: 6px; }
+  .door-card ul li { font-size: 14px; color: var(--bnk-text-secondary); padding-left: 20px; position: relative; }
+  .door-card ul li::before { content: "→"; position: absolute; left: 0; color: var(--bnk-primary); font-weight: 700; }
+  .door-cta { margin-top: auto; padding-top: 8px; }
+
+  /* AVATAR SCROLL BAND */
+  .avatar-band { background: var(--bnk-surface-raised); padding: 56px 0; }
+  @media (min-width: 1024px) { .avatar-band { padding: 80px 0; } }
+  .avatar-band-head { text-align: center; max-width: 720px; margin: 0 auto 32px; }
+  .avatar-scroll { display: grid; grid-template-columns: 1fr; gap: 16px; }
+  @media (min-width: 640px) { .avatar-scroll { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 1024px) { .avatar-scroll { grid-template-columns: repeat(5, 1fr); gap: 18px; } }
+  .avatar-card {
+    background: #fff; border: 1px solid var(--bnk-border-default); border-radius: var(--radius-xl);
+    padding: 22px; display: flex; flex-direction: column; gap: 12px;
+    transition: transform 240ms var(--ease-out), box-shadow 240ms var(--ease-out), border-color 240ms;
+    text-decoration: none; color: inherit; position: relative; overflow: hidden;
+  }
+  .avatar-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); border-color: var(--bnk-primary); color: inherit; }
+  .avatar-card .avatar-num {
+    width: 36px; height: 36px; border-radius: 999px; background: var(--bnk-gradient-soft);
+    color: var(--bnk-primary); display: grid; place-items: center;
+    font-family: var(--font-display); font-size: 14px; font-weight: 700;
+  }
+  .avatar-card h4 { font-size: 16px; line-height: 1.3; margin: 0; font-weight: 700; }
+  .avatar-card .avatar-quote { font-size: 13.5px; line-height: 1.5; color: var(--bnk-text-secondary); font-style: italic; margin: 0; flex-grow: 1; }
+  .avatar-card .avatar-tag {
+    align-self: flex-start; font-size: 12px; font-weight: 600; color: var(--bnk-primary);
+    padding: 4px 10px; background: var(--bnk-info-surface); border-radius: 999px;
+    display: inline-flex; align-items: center; gap: 4px;
+  }
+
+  /* FIVE VENDOR PROBLEM */
+  .section-raised { background: var(--bnk-surface-raised); }
+  .section-head { text-align: center; max-width: 740px; margin: 0 auto 40px; }
+  .section-head .eyebrow { justify-content: center; }
+  .section-head .lede { margin-left: auto; margin-right: auto; }
+  .vendor-stage { position: relative; padding: 24px 0; }
+  .vendor-blobs { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; max-width: 760px; margin: 0 auto; }
+  @media (min-width: 768px) { .vendor-blobs { grid-template-columns: repeat(5, 1fr); gap: 18px; } }
+  .vendor-blob {
+    background: #fff; border: 1px solid var(--bnk-border-default); border-radius: 999px;
+    padding: 18px 14px; text-align: center; box-shadow: inset 0 1px 2px rgba(15,23,42,0.04), var(--shadow-sm);
+    display: flex; flex-direction: column; align-items: center; gap: 10px;
+    opacity: 0; transform: translateY(8px); transition: opacity 500ms var(--ease-out), transform 500ms var(--ease-out);
+  }
+  .vendor-blob.in { opacity: 1; transform: translateY(0); }
+  .vendor-blob.jitter { animation: jitter 4s ease-in-out infinite; }
+  .vendor-blob:nth-child(2).jitter { animation-delay: 0.4s; }
+  .vendor-blob:nth-child(3).jitter { animation-delay: 0.8s; }
+  .vendor-blob:nth-child(4).jitter { animation-delay: 1.2s; }
+  .vendor-blob:nth-child(5).jitter { animation-delay: 1.6s; }
+  @keyframes jitter {
+    0%, 100% { transform: translate(0,0); }
+    25% { transform: translate(2px, -2px); }
+    50% { transform: translate(-2px, 1px); }
+    75% { transform: translate(1px, 2px); }
+  }
+  .vendor-blob svg { width: 32px; height: 32px; color: var(--bnk-text-secondary); }
+  .vendor-blob span { font-size: 12.5px; font-weight: 600; color: var(--bnk-text-primary); line-height: 1.3; }
+
+  /* ASPIRATIONAL HUB */
+  .hub-stage { position: relative; max-width: 720px; margin: 0 auto; aspect-ratio: 1 / 1; }
+  .hub-svg { width: 100%; height: 100%; }
+  .hub-hub-label {
+    position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+    background: var(--bnk-gradient); color: #fff; padding: 14px 16px; border-radius: var(--radius-lg);
+    text-align: center; box-shadow: var(--shadow-glow); max-width: 220px; z-index: 2;
+  }
+  .hub-hub-label .hub-eyebrow { font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.85; margin-bottom: 4px; }
+  .hub-hub-label .hub-title { font-weight: 700; font-size: 13.5px; line-height: 1.25; }
+  .hub-pillar {
+    position: absolute; background: #fff; border: 1px solid var(--bnk-border-default);
+    padding: 8px 12px; border-radius: 999px; font-size: 11.5px; font-weight: 600;
+    color: var(--bnk-text-primary); box-shadow: var(--shadow-sm); white-space: nowrap; z-index: 2;
+  }
+
+  /* GUIDE */
+  .guide-grid { display: grid; grid-template-columns: 1fr; gap: 36px; align-items: center; }
+  @media (min-width: 768px) { .guide-grid { grid-template-columns: 260px 1fr; gap: 56px; } }
+  .founder-portrait {
+    width: 100%; max-width: 260px; aspect-ratio: 1 / 1; border-radius: var(--radius-2xl);
+    background: var(--bnk-gradient-wash); position: relative; overflow: hidden;
+    box-shadow: var(--shadow-lg); border: 1px solid var(--bnk-border-default);
+  }
+  .founder-portrait svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .auth-marker {
+    display: block; font-size: 18px; line-height: 1.5; color: var(--bnk-text-primary);
+    font-weight: 500; margin: 0 0 18px; padding: 18px 22px; border-left: 4px solid var(--bnk-primary);
+    background: var(--bnk-info-surface); border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    font-style: italic;
+  }
+
+  /* PLAN */
+  .plan-grid { display: grid; grid-template-columns: 1fr; gap: 22px; }
+  @media (min-width: 768px) { .plan-grid { grid-template-columns: repeat(3, 1fr); } }
+  .plan-card {
+    background: #fff; border: 1px solid var(--bnk-border-default); border-radius: var(--radius-xl);
+    padding: 26px; position: relative; transition: transform 240ms var(--ease-out), box-shadow 240ms var(--ease-out);
+    opacity: 0; transform: translateY(20px); display: flex; flex-direction: column; gap: 10px;
+  }
+  .plan-card.in { opacity: 1; transform: translateY(0); }
+  .plan-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+  .plan-number { font-family: var(--font-display); font-size: 13px; font-weight: 700; color: var(--bnk-primary); letter-spacing: 0.1em; }
+  .plan-icon { width: 48px; height: 48px; border-radius: var(--radius-md); display: grid; place-items: center; background: var(--bnk-gradient-soft); color: var(--bnk-primary); margin-bottom: 4px; }
+  .plan-icon svg { width: 24px; height: 24px; }
+  .plan-card h3 { margin: 0 0 4px; font-size: 22px; }
+  .plan-card .specifics { display: inline-flex; align-self: flex-start; align-items: center; gap: 6px; padding: 4px 10px; background: var(--bnk-info-surface); color: var(--bnk-primary); border-radius: 999px; font-size: 12px; font-weight: 600; margin-bottom: 4px; }
+  .plan-card p { font-size: 14.5px; margin: 0; }
+  .plan-card .install-em { background: var(--bnk-gradient); -webkit-background-clip: text; background-clip: text; color: transparent; font-weight: 700; }
+
+  /* STATS small band */
+  .stats-band { background: var(--bnk-surface-raised); }
+  .stats-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  @media (min-width: 768px) { .stats-grid { grid-template-columns: repeat(4, 1fr); } }
+  .stat-cell { text-align: center; padding: 14px; }
+  .stat-num { font-family: var(--font-display); font-size: 40px; font-weight: 700; line-height: 1; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
+  @media (min-width: 1024px) { .stat-num { font-size: 56px; } }
+  .stat-lbl { font-size: 13px; color: var(--bnk-text-secondary); margin-top: 8px; line-height: 1.4; }
+  .illustrative-note { font-size: 12px; color: var(--bnk-text-muted); font-style: italic; text-align: center; margin: 20px auto 0; max-width: 60ch; }
+
+  /* INSTALL TERMINAL */
+  .install-band { background: linear-gradient(180deg, #fff 0%, var(--bnk-surface-raised) 100%); }
+  .install-stage {
+    background: #0F172A; color: #fff; border-radius: var(--radius-2xl); padding: 32px;
+    box-shadow: var(--shadow-xl); max-width: 880px; margin: 0 auto; position: relative; overflow: hidden;
+  }
+  @media (min-width: 768px) { .install-stage { padding: 40px; } }
+  .install-stage::before {
+    content: ""; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+    background: var(--bnk-gradient);
+  }
+  .install-header { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; }
+  .install-header .dot { width: 10px; height: 10px; border-radius: 999px; background: #2EC27E; box-shadow: 0 0 0 4px rgba(46,194,126,0.15); }
+  .install-header .label { font-family: var(--font-mono); font-size: 12.5px; color: #94A3B8; letter-spacing: 0.06em; }
+  .install-list { display: flex; flex-direction: column; gap: 10px; }
+  .install-row {
+    display: grid; grid-template-columns: auto 1fr auto; gap: 14px; align-items: center;
+    padding: 14px 16px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.06);
+    border-radius: var(--radius-md);
+    opacity: 0; transform: translateX(-8px); transition: opacity 500ms var(--ease-out), transform 500ms var(--ease-out);
+  }
+  .install-row.in { opacity: 1; transform: translateX(0); }
+  .install-row.in .install-check { color: #2EC27E; }
+  .install-row.in .install-status { color: #2EC27E; }
+  .install-check {
+    width: 28px; height: 28px; border-radius: 999px; border: 1.5px solid #475569;
+    color: #475569; display: grid; place-items: center; flex-shrink: 0;
+    transition: color 300ms, border-color 300ms;
+  }
+  .install-row.in .install-check { border-color: #2EC27E; }
+  .install-check svg { width: 16px; height: 16px; }
+  .install-text { font-size: 14.5px; font-weight: 500; color: #E2E8F0; }
+  .install-text .install-name { color: #fff; font-weight: 700; }
+  .install-status { font-size: 12px; color: #64748B; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; }
+  .install-summary {
+    margin-top: 22px; padding-top: 22px; border-top: 1px dashed rgba(255,255,255,0.12);
+    display: flex; flex-wrap: wrap; gap: 14px; align-items: center; justify-content: space-between;
+  }
+  .install-summary-text { font-size: 13.5px; color: #CBD5E1; }
+  .install-summary-text strong { color: #fff; }
+
+  /* 7 SYSTEMS BENTO */
+  .pillar-bento { display: grid; grid-template-columns: 1fr; gap: 18px; }
+  @media (min-width: 768px) { .pillar-bento { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 1024px) { .pillar-bento { grid-template-columns: repeat(12, 1fr); grid-auto-rows: minmax(200px, auto); } }
+  .pillar-tile {
+    background: #fff; border: 1px solid var(--bnk-border-default); border-radius: var(--radius-xl);
+    padding: 22px; position: relative; overflow: hidden;
+    transition: transform 240ms var(--ease-out), box-shadow 240ms var(--ease-out), border-color 240ms;
+    display: flex; flex-direction: column; gap: 10px; color: inherit; text-decoration: none;
+  }
+  .pillar-tile::after {
+    content: ""; position: absolute; inset: 0;
+    background: var(--bnk-gradient-soft); opacity: 0;
+    transition: opacity 600ms var(--ease-out); pointer-events: none;
+  }
+  .pillar-tile:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); border-color: var(--bnk-border-strong); color: inherit; }
+  .pillar-tile:hover::after { opacity: 1; }
+  .pillar-tile > * { position: relative; z-index: 1; }
+  .pillar-eyebrow { font-size: 11px; font-weight: 700; color: var(--bnk-primary); letter-spacing: 0.1em; text-transform: uppercase; }
+  .pillar-tile h3 { font-size: 20px; line-height: 1.2; margin: 4px 0 6px; }
+  .pillar-tile .pillar-instead { font-size: 13.5px; color: var(--bnk-text-muted); font-style: italic; margin: 0 0 8px; }
+  .pillar-tile .pillar-mech { font-size: 14px; color: var(--bnk-text-secondary); margin: 0 0 12px; flex-grow: 1; }
+  .pillar-tile .pillar-link { font-size: 13.5px; font-weight: 600; color: var(--bnk-primary); align-self: flex-start; }
+  .pillar-tile .install-stamp {
+    align-self: flex-start; display: inline-flex; align-items: center; gap: 5px;
+    padding: 3px 9px; border-radius: 999px; background: var(--bnk-gradient); color: #fff;
+    font-size: 10.5px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 4px;
+  }
+  .pillar-icon-wrap { width: 42px; height: 42px; border-radius: var(--radius-md); display: grid; place-items: center; background: var(--bnk-gradient); color: #fff; margin-bottom: 2px; }
+  .pillar-icon-wrap svg { width: 22px; height: 22px; }
+  @media (min-width: 1024px) {
+    .pillar-tile.t1 { grid-column: span 6; }
+    .pillar-tile.t2 { grid-column: span 6; }
+    .pillar-tile.t3 { grid-column: span 4; }
+    .pillar-tile.t4 { grid-column: span 4; }
+    .pillar-tile.t5 { grid-column: span 4; }
+    .pillar-tile.t6 { grid-column: span 6; }
+    .pillar-tile.t7 { grid-column: span 6; }
+    .pillar-tile.t1 h3, .pillar-tile.t2 h3 { font-size: 22px; }
+  }
+
+  /* MULTI-ROUND FUNDING SYSTEM SHOWCASE */
+  .funding-showcase { background: linear-gradient(180deg, #0F172A 0%, #1E293B 100%); color: #fff; padding: 80px 0; position: relative; overflow: hidden; }
+  @media (min-width: 1024px) { .funding-showcase { padding: 120px 0; } }
+  .funding-showcase::before {
+    content: ""; position: absolute; inset: 0;
+    background:
+      radial-gradient(60% 50% at 70% 20%, rgba(0,174,239,0.15), transparent 70%),
+      radial-gradient(50% 40% at 20% 80%, rgba(45,56,138,0.20), transparent 70%);
+    pointer-events: none;
+  }
+  .funding-showcase .container { position: relative; z-index: 1; }
+  .funding-showcase .eyebrow { color: #00AEEF; justify-content: center; }
+  .funding-showcase .eyebrow::before { background: #00AEEF; opacity: 0.6; }
+  .funding-showcase h2 { color: #fff; }
+  .funding-showcase .lede { color: #CBD5E1; }
+  .funding-head { text-align: center; max-width: 820px; margin: 0 auto 56px; }
+  .funding-system-card {
+    background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.10);
+    border-radius: var(--radius-2xl); padding: 28px 22px;
+    backdrop-filter: blur(8px); position: relative;
+  }
+  @media (min-width: 768px) { .funding-system-card { padding: 40px; } }
+
+  .funding-timeline {
+    position: relative; padding: 36px 0 18px;
+  }
+  .funding-timeline-line {
+    position: absolute; left: 0; right: 0; top: 50%; height: 2px;
+    background: linear-gradient(90deg, rgba(0,174,239,0.30) 0%, rgba(0,174,239,0.60) 100%);
+    transform-origin: left; transform: scaleX(0); transition: transform 1.8s var(--ease-out);
+  }
+  .funding-timeline.in .funding-timeline-line { transform: scaleX(1); }
+  .funding-events {
+    display: grid; grid-template-columns: 1fr; gap: 24px; position: relative; z-index: 1;
+  }
+  @media (min-width: 768px) { .funding-events { grid-template-columns: repeat(4, 1fr); gap: 16px; } }
+  .funding-event {
+    background: #0F172A; border: 2px solid rgba(0,174,239,0.30); border-radius: var(--radius-xl);
+    padding: 18px 16px; text-align: center; position: relative;
+    transition: border-color 320ms, transform 320ms;
+  }
+  .funding-event:hover { border-color: #00AEEF; transform: translateY(-3px); }
+  .funding-event-num {
+    width: 36px; height: 36px; border-radius: 999px;
+    background: var(--bnk-gradient); color: #fff;
+    display: grid; place-items: center; margin: -34px auto 12px;
+    font-family: var(--font-display); font-weight: 800; font-size: 14px;
+    box-shadow: 0 0 0 4px #0F172A;
+  }
+  .funding-event-stage { font-size: 11px; font-weight: 700; color: #00AEEF; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 6px; }
+  .funding-event-name { font-family: var(--font-display); font-size: 18px; font-weight: 700; color: #fff; margin-bottom: 4px; }
+  .funding-event-amount {
+    font-family: var(--font-display); font-size: 22px; font-weight: 800; color: #00AEEF;
+    letter-spacing: -0.02em; line-height: 1; font-variant-numeric: tabular-nums; margin: 4px 0 6px;
+  }
+  .funding-event-eta { font-size: 11px; color: #94A3B8; font-style: italic; margin-bottom: 10px; }
+  .funding-event-install { font-size: 12px; color: #CBD5E1; line-height: 1.45; padding-top: 10px; border-top: 1px dashed rgba(255,255,255,0.12); }
+  .funding-event-install strong { color: #fff; }
+  .funding-illustrative { text-align: center; font-size: 12px; color: #64748B; font-style: italic; margin-top: 18px; }
+
+  .funding-cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 36px; justify-content: center; }
+  .funding-showcase .btn-primary { background: #fff; color: var(--bnk-primary-deep); }
+  .funding-showcase .btn-primary:hover { background: #fff; color: var(--bnk-grad-start); }
+  .funding-showcase .btn-secondary { background: transparent; color: #fff; border-color: rgba(255,255,255,0.5); }
+  .funding-showcase .btn-secondary:hover { background: rgba(255,255,255,0.08); color: #fff; border-color: #fff; }
+
+  /* LIVE PRODUCT UI SCREENSHOTS BAND */
+  .product-band { background: var(--bnk-surface-raised); }
+  .product-grid { display: grid; grid-template-columns: 1fr; gap: 22px; }
+  @media (min-width: 768px) { .product-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 1024px) { .product-grid { grid-template-columns: repeat(3, 1fr); } }
+  .product-card {
+    background: #fff; border: 1px solid var(--bnk-border-default); border-radius: var(--radius-xl);
+    padding: 18px; display: flex; flex-direction: column; gap: 12px;
+    transition: transform 280ms var(--ease-out), box-shadow 280ms var(--ease-out);
+    overflow: hidden;
+  }
+  .product-card:hover { transform: translateY(-4px) scale(1.01); box-shadow: var(--shadow-lg); }
+  .product-screenshot {
+    aspect-ratio: 16 / 10; background: linear-gradient(135deg, var(--bnk-surface-raised) 0%, var(--bnk-surface-sunken) 100%);
+    border-radius: var(--radius-md); overflow: hidden;
+    display: grid; place-items: center; position: relative;
+    border: 1px solid var(--bnk-border-default);
+  }
+  .product-screenshot svg { width: 100%; height: 100%; }
+  .product-card-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; }
+  .product-card h4 { font-size: 16px; margin: 0; line-height: 1.25; }
+  .product-card p { font-size: 13px; color: var(--bnk-text-muted); margin: 0; line-height: 1.45; }
+
+  /* NATIONWIDE COVERAGE */
+  .nationwide-band { background: #fff; }
+  .nationwide-grid { display: grid; grid-template-columns: 1fr; gap: 36px; align-items: center; }
+  @media (min-width: 1024px) { .nationwide-grid { grid-template-columns: 1fr 1.1fr; gap: 56px; } }
+  .nationwide-states {
+    display: grid; grid-template-columns: repeat(8, 1fr); gap: 6px;
+    max-width: 540px; margin: 0 auto;
+  }
+  @media (min-width: 640px) { .nationwide-states { grid-template-columns: repeat(11, 1fr); gap: 8px; } }
+  .state-cell {
+    aspect-ratio: 1 / 1; background: var(--bnk-surface-sunken); border-radius: var(--radius-sm);
+    display: grid; place-items: center;
+    font-size: 9px; font-weight: 700; color: var(--bnk-text-muted);
+    transition: background 320ms, color 320ms, transform 320ms;
+    border: 1px solid var(--bnk-border-default);
+  }
+  @media (min-width: 640px) { .state-cell { font-size: 10px; } }
+  .state-cell.lit {
+    background: var(--bnk-gradient); color: #fff; border-color: transparent;
+    box-shadow: 0 2px 8px rgba(19,125,197,0.20);
+  }
+  .nationwide-legend { display: flex; gap: 16px; margin-top: 22px; justify-content: center; flex-wrap: wrap; }
+  .legend-item { display: inline-flex; align-items: center; gap: 8px; font-size: 12.5px; color: var(--bnk-text-secondary); }
+  .legend-swatch { width: 14px; height: 14px; border-radius: 4px; }
+  .legend-swatch.lit { background: var(--bnk-gradient); }
+  .legend-swatch.empty { background: var(--bnk-surface-sunken); border: 1px solid var(--bnk-border-default); }
+
+  /* COST OF INACTION */
+  .cost-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
+  @media (min-width: 768px) { .cost-grid { grid-template-columns: repeat(3, 1fr); } }
+  .cost-card {
+    background: #fff; border: 1px solid var(--bnk-border-default); border-radius: var(--radius-xl);
+    padding: 26px; border-top: 4px solid var(--bnk-warning);
+  }
+  .cost-card .cost-icon { width: 44px; height: 44px; color: var(--bnk-warning); margin-bottom: 14px; }
+  .cost-card h3 { font-size: 19px; margin-bottom: 10px; }
+  .cost-card p { font-size: 14.5px; margin: 0 0 12px; }
+  .cost-card .citation { font-size: 12px; color: var(--bnk-text-muted); font-style: italic; padding-top: 12px; border-top: 1px dashed var(--bnk-border-default); }
+
+  /* SUCCESS SCENE */
+  .composite-banner {
+    background: var(--bnk-warning-surface); border: 1px solid rgba(180,83,9,0.2);
+    border-radius: var(--radius-md); padding: 14px 18px; max-width: 760px; margin: 0 auto 36px;
+    font-size: 13px; color: var(--bnk-warning); font-style: italic; text-align: center;
+  }
+  .testimonial-grid { display: grid; grid-template-columns: 1fr; gap: 22px; }
+  @media (min-width: 768px) { .testimonial-grid { grid-template-columns: repeat(3, 1fr); } }
+  .testimonial-card {
+    background: #fff; border: 1px solid var(--bnk-border-default); border-radius: var(--radius-xl);
+    padding: 26px; transition: transform 240ms var(--ease-out), box-shadow 240ms var(--ease-out);
+    display: flex; flex-direction: column; gap: 14px;
+  }
+  .testimonial-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+  .testimonial-stat { font-family: var(--font-display); font-size: 30px; font-weight: 700; letter-spacing: -0.025em; line-height: 1; }
+  .testimonial-quote { font-size: 15px; line-height: 1.6; color: var(--bnk-text-primary); font-style: italic; margin: 0; }
+  .testimonial-meta { display: flex; align-items: center; gap: 12px; padding-top: 14px; border-top: 1px solid var(--bnk-border-default); }
+  .testimonial-avatar { width: 40px; height: 40px; border-radius: 999px; background: var(--bnk-gradient); flex-shrink: 0; display: grid; place-items: center; color: #fff; font-weight: 700; font-size: 13px; }
+  .testimonial-attr .name { font-weight: 600; font-size: 14px; color: var(--bnk-text-primary); }
+  .testimonial-attr .biz { font-size: 12px; color: var(--bnk-text-muted); }
+  .testimonial-disclaimer { font-size: 11px; color: var(--bnk-text-muted); font-style: italic; margin-top: 6px; }
+
+  /* DEEP PILLARS */
+  .deep-pillar { padding: 56px 0; border-top: 1px solid var(--bnk-border-default); }
+  .deep-pillar:first-of-type { border-top: none; padding-top: 32px; }
+  .deep-pillar-grid { display: grid; grid-template-columns: 1fr; gap: 32px; align-items: center; }
+  @media (min-width: 768px) { .deep-pillar-grid { grid-template-columns: 1fr 1fr; gap: 56px; } }
+  .deep-pillar .pillar-eyebrow { display: inline-block; margin-bottom: 12px; }
+  .deep-pillar h3 { font-size: 26px; margin-bottom: 12px; }
+  .deep-pillar ul { padding-left: 0; list-style: none; margin: 16px 0 0; }
+  .deep-pillar ul li { padding: 6px 0 6px 26px; position: relative; font-size: 14.5px; color: var(--bnk-text-secondary); }
+  .deep-pillar ul li::before { content: "✓"; position: absolute; left: 0; top: 6px; color: var(--bnk-primary); font-weight: 700; }
+  .deep-pillar-visual {
+    background: var(--bnk-gradient-wash); border-radius: var(--radius-2xl); aspect-ratio: 4 / 3;
+    display: grid; place-items: center; border: 1px solid var(--bnk-border-default);
+    box-shadow: var(--shadow-md); overflow: hidden; position: relative;
+  }
+  .deep-pillar.flag { background: var(--bnk-info-surface); border-radius: var(--radius-2xl); padding: 40px 28px; }
+  .deep-pillar.flag .pillar-flag {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 4px 10px; background: var(--bnk-gradient); color: #fff;
+    border-radius: 999px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em;
+    margin-right: 8px;
+  }
+
+  /* PRICING */
+  .pricing-toggle-wrap { display: flex; justify-content: center; margin-bottom: 32px; }
+  .pricing-toggle { display: inline-flex; background: var(--bnk-surface-sunken); border-radius: 999px; padding: 4px; }
+  .pricing-toggle button { background: transparent; border: none; padding: 8px 18px; border-radius: 999px; font-weight: 600; font-size: 14px; color: var(--bnk-text-secondary); cursor: pointer; transition: all 200ms; }
+  .pricing-toggle button.active { background: #fff; color: var(--bnk-primary); box-shadow: var(--shadow-sm); }
+  .pricing-grid { display: grid; grid-template-columns: 1fr; gap: 20px; align-items: stretch; }
+  @media (min-width: 768px) { .pricing-grid { grid-template-columns: repeat(3, 1fr); } }
+  .pricing-card {
+    background: #fff; border: 1px solid var(--bnk-border-default); border-radius: var(--radius-xl);
+    padding: 28px; position: relative; display: flex; flex-direction: column; gap: 14px;
+  }
+  .pricing-card.featured { border-color: var(--bnk-primary); box-shadow: var(--shadow-glow); }
+  @media (min-width: 768px) { .pricing-card.featured { transform: translateY(-6px); } }
+  .pricing-badge { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--bnk-gradient); color: #fff; padding: 4px 14px; border-radius: 999px; font-size: 12px; font-weight: 700; letter-spacing: 0.04em; white-space: nowrap; }
+  .pricing-name { font-size: 18px; font-weight: 700; color: var(--bnk-text-primary); }
+  .pricing-price { font-family: var(--font-display); font-size: 40px; font-weight: 700; letter-spacing: -0.03em; line-height: 1; }
+  .pricing-price small { font-size: 15px; color: var(--bnk-text-muted); font-weight: 500; }
+  .pricing-save-pill {
+    display: inline-flex; padding: 3px 9px; background: var(--bnk-success-surface); color: var(--bnk-success);
+    border-radius: 999px; font-size: 11px; font-weight: 700; letter-spacing: 0.04em;
+    border: 1px solid rgba(21,128,61,0.18); margin-top: 6px;
+  }
+  .pricing-desc { font-size: 14px; color: var(--bnk-text-secondary); margin: 0; }
+  .pricing-features-head { font-size: 12px; font-weight: 700; color: var(--bnk-text-primary); text-transform: uppercase; letter-spacing: 0.08em; margin: 6px 0 0; }
+  .pricing-card ul { list-style: none; padding: 0; margin: 4px 0; display: flex; flex-direction: column; gap: 8px; flex-grow: 1; }
+  .pricing-card ul li { font-size: 14px; padding-left: 22px; position: relative; color: var(--bnk-text-secondary); line-height: 1.45; }
+  .pricing-card ul li::before {
+    content: ""; position: absolute; left: 0; top: 6px; width: 14px; height: 14px;
+    border-radius: 999px; background: var(--bnk-info-surface);
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23137DC5' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'><polyline points='20 6 9 17 4 12'/></svg>");
+    background-size: 10px 10px; background-position: center; background-repeat: no-repeat;
+  }
+  .pricing-card .pricing-cta { margin-top: auto; }
+  .pricing-foot {
+    margin-top: 28px; text-align: center; font-size: 13px; color: var(--bnk-text-muted);
+  }
+
+  /* ADVISOR BAND */
+  .advisor-band { background: #0F172A; color: #fff; padding: 80px 0; position: relative; overflow: hidden; }
+  @media (min-width: 1024px) { .advisor-band { padding: 120px 0; } }
+  .advisor-band::before {
+    content: ""; position: absolute; inset: 0;
+    background:
+      radial-gradient(60% 50% at 90% 10%, rgba(0,174,239,0.16), transparent 70%),
+      radial-gradient(50% 40% at 10% 90%, rgba(45,56,138,0.20), transparent 70%);
+    pointer-events: none;
+    animation: ambientShift 22s ease-in-out infinite alternate;
+  }
+  .advisor-band .container { position: relative; z-index: 1; }
+  .advisor-band .eyebrow { color: #00AEEF; }
+  .advisor-band .eyebrow::before { background: #00AEEF; opacity: 0.6; }
+  .advisor-band h2 { color: #fff; }
+  .advisor-band .lede { color: #CBD5E1; }
+  .advisor-head { text-align: center; max-width: 820px; margin: 0 auto 48px; }
+  .advisor-head h2 { font-size: 32px; line-height: 1.1; margin-bottom: 16px; }
+  @media (min-width: 1024px) { .advisor-head h2 { font-size: 48px; } }
+  .advisor-grid { display: grid; grid-template-columns: 1fr; gap: 36px; }
+  @media (min-width: 1024px) { .advisor-grid { grid-template-columns: 1.4fr 1fr; gap: 56px; align-items: start; } }
+  .stack-card {
+    background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
+    border-radius: var(--radius-2xl); padding: 28px; backdrop-filter: blur(8px);
+  }
+  .stack-card h3 { color: #fff; font-size: 20px; margin: 0 0 18px; }
+  .stack-list { display: flex; flex-direction: column; gap: 8px; }
+  .stack-row {
+    display: grid; grid-template-columns: auto 1fr auto; gap: 12px; align-items: start;
+    padding: 12px 14px; background: rgba(255,255,255,0.03);
+    border-radius: var(--radius-md); border: 1px solid rgba(255,255,255,0.06);
+  }
+  .stack-num {
+    width: 24px; height: 24px; border-radius: 999px; background: rgba(0,174,239,0.18);
+    color: #00AEEF; display: grid; place-items: center;
+    font-family: var(--font-display); font-size: 11px; font-weight: 700; flex-shrink: 0;
+  }
+  .stack-item { font-size: 13.5px; color: #E2E8F0; line-height: 1.45; }
+  .stack-item strong { color: #fff; font-weight: 700; }
+  .stack-val { font-family: var(--font-display); font-size: 13px; font-weight: 700; color: #00AEEF; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .stack-total {
+    margin-top: 18px; padding: 18px 16px; background: var(--bnk-gradient);
+    border-radius: var(--radius-md); display: grid; gap: 6px;
+  }
+  .stack-total .total-row { display: flex; justify-content: space-between; align-items: center; font-size: 13px; color: rgba(255,255,255,0.85); }
+  .stack-total .total-row.big { font-size: 16px; color: #fff; font-weight: 700; letter-spacing: 0.02em; }
+  .stack-total .total-row.big .v { font-family: var(--font-display); font-size: 26px; font-weight: 800; letter-spacing: -0.02em; }
+  .stack-total .total-row.your .v { font-family: var(--font-display); font-size: 22px; font-weight: 800; }
+  .scarcity-card {
+    background: linear-gradient(135deg, rgba(0,174,239,0.10) 0%, rgba(45,56,138,0.16) 100%);
+    border: 1px solid rgba(0,174,239,0.3); border-radius: var(--radius-2xl);
+    padding: 26px; margin-bottom: 24px;
+  }
+  .scarcity-card h3 { color: #fff; font-size: 20px; margin: 0 0 8px; }
+  .scarcity-card .scarcity-count {
+    display: flex; align-items: baseline; gap: 8px; margin: 12px 0;
+    font-family: var(--font-display); color: #00AEEF;
+  }
+  .scarcity-card .scarcity-count .n { font-size: 44px; font-weight: 800; letter-spacing: -0.03em; line-height: 1; }
+  .scarcity-card .scarcity-count .l { font-size: 14px; color: #CBD5E1; font-family: var(--font-body); font-weight: 500; }
+  .scarcity-card ul { list-style: none; padding: 0; margin: 12px 0 0; display: flex; flex-direction: column; gap: 8px; }
+  .scarcity-card ul li { font-size: 13.5px; padding-left: 22px; position: relative; color: #E2E8F0; }
+  .scarcity-card ul li::before { content: "★"; position: absolute; left: 0; color: #00AEEF; }
+  .avatar-served-card {
+    background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
+    border-radius: var(--radius-2xl); padding: 24px;
+  }
+  .avatar-served-card h3 { color: #fff; font-size: 18px; margin: 0 0 14px; }
+  .avatar-served { display: flex; flex-direction: column; gap: 12px; }
+  .avatar-served .av-row { display: grid; grid-template-columns: 28px 1fr; gap: 10px; align-items: start; font-size: 13.5px; color: #E2E8F0; line-height: 1.5; }
+  .avatar-served .av-num { width: 24px; height: 24px; border-radius: 999px; background: rgba(0,174,239,0.18); color: #00AEEF; display: grid; place-items: center; font-size: 11px; font-weight: 800; flex-shrink: 0; margin-top: 1px; font-family: var(--font-display); }
+  .avatar-served .av-row strong { color: #fff; }
+  .advisor-cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; justify-content: center; }
+  .advisor-band .btn-secondary { background: transparent; color: #fff; border-color: rgba(255,255,255,0.5); }
+  .advisor-band .btn-secondary:hover { background: rgba(255,255,255,0.08); color: #fff; border-color: #fff; }
+  .advisor-not-block {
+    margin-top: 32px; padding: 18px; background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08); border-radius: var(--radius-md);
+    font-size: 13px; color: #CBD5E1; line-height: 1.5; text-align: center;
+  }
+  .advisor-not-block strong { color: #fff; }
+
+  /* REPRISE */
+  .reprise { background: var(--bnk-surface-raised); }
+  .reprise-grid { display: grid; grid-template-columns: 1fr; gap: 36px; align-items: center; }
+  @media (min-width: 768px) { .reprise-grid { grid-template-columns: 1fr 1fr; gap: 56px; } }
+  .video-placeholder {
+    background: var(--bnk-gradient); border-radius: var(--radius-2xl); aspect-ratio: 16/10;
+    display: grid; place-items: center; box-shadow: var(--shadow-xl); position: relative; overflow: hidden;
+  }
+  .video-placeholder::before {
+    content: ""; position: absolute; inset: 0;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255,255,255,0.12), transparent 70%);
+    animation: pulseSheen 4s ease-in-out infinite alternate;
+  }
+  .play-btn {
+    width: 72px; height: 72px; border-radius: 999px; background: rgba(255,255,255,0.95);
+    display: grid; place-items: center; box-shadow: var(--shadow-xl); position: relative; z-index: 1;
+    transition: transform 240ms var(--ease-out); cursor: pointer; border: none;
+  }
+  .play-btn:hover { transform: scale(1.08); }
+  .play-btn svg { width: 28px; height: 28px; color: var(--bnk-grad-start); margin-left: 4px; }
+
+  /* FINAL CTA */
+  .final-cta {
+    background: var(--bnk-gradient); color: #fff; text-align: center; position: relative; overflow: hidden;
+  }
+  .final-cta::before {
+    content: ""; position: absolute; inset: 0;
+    background: radial-gradient(60% 60% at 50% 50%, rgba(255,255,255,0.12), transparent 70%);
+    animation: pulseSheen 4s ease-in-out infinite alternate;
+  }
+  @keyframes pulseSheen { from { opacity: 0.6; } to { opacity: 1; } }
+  .final-cta .container { position: relative; z-index: 1; }
+  .final-cta .eyebrow { color: rgba(255,255,255,0.85); justify-content: center; }
+  .final-cta .eyebrow::before { background: rgba(255,255,255,0.4); }
+  .final-cta h2 { color: #fff; max-width: 22ch; margin: 0 auto 16px; }
+  .final-cta p { color: rgba(255,255,255,0.92); max-width: 60ch; margin: 0 auto 24px; }
+  .final-cta .logo-wrap { justify-content: center; margin-bottom: 28px; }
+  .final-cta .logo-wrap svg { height: 44px; }
+  .final-cta .btn-primary { background: #fff; color: var(--bnk-primary-deep); }
+  .final-cta .btn-primary:hover { background: #fff; color: var(--bnk-grad-start); transform: translateY(-1px) scale(1.02); }
+  .final-cta .btn-secondary { background: transparent; color: #fff; border-color: rgba(255,255,255,0.6); }
+  .final-cta .btn-secondary:hover { background: rgba(255,255,255,0.1); color: #fff; border-color: #fff; }
+  .final-cta-trust {
+    display: inline-flex; align-items: center; gap: 18px; flex-wrap: wrap; justify-content: center;
+    margin: 18px auto 0; font-size: 13px; color: rgba(255,255,255,0.88);
+  }
+  .final-cta-trust span { display: inline-flex; align-items: center; gap: 6px; }
+  .final-cta-trust span::before { content: "✓"; font-weight: 700; color: #fff; }
+  .ps-line { margin: 28px auto 0; max-width: 720px; font-size: 14px; line-height: 1.6; color: rgba(255,255,255,0.88); font-style: italic; border-top: 1px solid rgba(255,255,255,0.22); padding-top: 20px; }
+  .ps-line strong { color: #fff; font-style: normal; }
+
+  /* FOOTER */
+  .site-footer { background: #0F172A; color: #CBD5E1; padding: 64px 0 28px; }
+  .footer-grid { display: grid; grid-template-columns: 1fr; gap: 36px; margin-bottom: 40px; }
+  @media (min-width: 640px) { .footer-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 1024px) { .footer-grid { grid-template-columns: 1.5fr repeat(4, 1fr); } }
+  .footer-brand .logo-wrap svg { height: 32px; }
+  .footer-brand p { font-size: 14px; color: #94A3B8; margin-top: 14px; max-width: 36ch; }
+  .footer-col h4 { font-size: 13px; color: #F8FAFC; font-weight: 700; margin-bottom: 14px; letter-spacing: 0.06em; text-transform: uppercase; }
+  .footer-col ul { list-style: none; padding: 0; margin: 0; }
+  .footer-col li { margin-bottom: 8px; }
+  .footer-col a { color: #CBD5E1; font-size: 14px; transition: color 180ms; }
+  .footer-col a:hover { color: #F8FAFC; }
+  .footer-social { display: flex; gap: 10px; margin-top: 14px; }
+  .footer-social a { width: 34px; height: 34px; border: 1px solid rgba(255,255,255,0.15); border-radius: var(--radius-md); display: grid; place-items: center; color: #CBD5E1; }
+  .footer-social a:hover { background: rgba(255,255,255,0.08); color: #fff; }
+  .footer-social svg { width: 16px; height: 16px; }
+  .compliance-block { font-size: 12px; line-height: 1.55; color: #94A3B8; padding: 28px 0; border-top: 1px solid rgba(255,255,255,0.1); }
+  .compliance-block p { color: #94A3B8; margin: 0 0 12px; max-width: 90ch; }
+  .compliance-block p:last-child { margin-bottom: 0; }
+  .compliance-block strong { color: #CBD5E1; }
+  .footer-bottom { display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; padding-top: 22px; border-top: 1px solid rgba(255,255,255,0.1); font-size: 12px; color: #94A3B8; }
+  .newsletter-input { display: flex; gap: 8px; margin-top: 12px; }
+  .newsletter-input input { flex: 1; padding: 10px 14px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.15); color: #fff; border-radius: var(--radius-md); font-family: inherit; font-size: 14px; }
+  .newsletter-input input::placeholder { color: #64748B; }
+  .newsletter-input button { background: var(--bnk-gradient); color: #fff; border: none; padding: 0 16px; border-radius: var(--radius-md); font-weight: 600; cursor: pointer; }
+
+  /* MARQUEE */
+  .marquee {
+    overflow: hidden; padding: 16px 0; background: var(--bnk-surface-page);
+    border-top: 1px solid var(--bnk-border-default); border-bottom: 1px solid var(--bnk-border-default);
+  }
+  .marquee-track { display: flex; gap: 48px; animation: marqueeScroll 36s linear infinite; white-space: nowrap; }
+  .marquee-item { font-size: 12.5px; font-weight: 600; color: var(--bnk-text-muted); letter-spacing: 0.08em; text-transform: uppercase; display: inline-flex; align-items: center; gap: 12px; }
+  .marquee-item::after { content: "•"; color: var(--bnk-primary); }
+  @keyframes marqueeScroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+    .vendor-blob, .plan-card, .install-row { opacity: 1 !important; transform: none !important; }
+    .vendor-blob.jitter, .marquee-track { animation: none !important; }
+    .funding-timeline-line { transform: scaleX(1) !important; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Shared logo SVG defs (color + white) -->
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="bnkLogoGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2d388a"/><stop offset="1" stop-color="#00aeef"/>
+    </linearGradient>
+    <symbol id="bnkLogoColor" viewBox="0 0 3162.08 734.83">
+      <g transform="scale(8.104052026013006) translate(10, 10)">
+        <g fill="url(#bnkLogoGrad)" transform="matrix(0.8865504081126907,0,0,0.8865504081126907,-12.065064686629364,-9.069410269162256)">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M80.11,49.695c0.003,5.951,1.481,10.771,3.303,10.771 c1.823,0,3.302-4.824,3.305-10.768c-0.003-5.951-1.479-10.773-3.303-10.773C81.591,38.926,80.107,43.748,80.11,49.695z"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M39.138,14.154c-15.075,6.26-25.529,19.93-25.529,35.779 c-0.004,15.852,10.454,29.52,25.536,35.777C30.504,78.232,24.764,65,24.764,49.934S30.508,21.637,39.138,14.154z"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M49.349,10.23c-7.066,0-12.803,17.854-12.803,39.857 c0,22.016,5.736,39.859,12.808,39.861c3.491-0.002,6.66-4.367,8.969-11.438c1.954,4.756,4.414,7.598,7.084,7.598 c6.367,0.002,11.532-16.066,11.527-35.883c0.005-19.816-5.156-35.887-11.521-35.879c-2.651,0-5.093,2.797-7.041,7.484 C56.057,14.668,52.871,10.234,49.349,10.23z M75.225,50.227c0.005,11.121-2.764,20.143-6.174,20.143 c-3.412,0-6.176-9.023-6.176-20.139c0-11.127,2.764-20.146,6.176-20.15C72.465,30.084,75.229,39.102,75.225,50.227z M57.792,23.318 c-2.395,6.576-3.907,16.191-3.907,26.908c-0.001,10.623,1.484,20.166,3.841,26.736c-1.15,1.559-2.418,2.424-3.748,2.424 c-5.202-0.004-9.414-13.117-9.414-29.299c0-16.174,4.212-29.293,9.407-29.293C55.333,20.797,56.626,21.701,57.792,23.318z"/>
+        </g>
+        <g fill="url(#bnkLogoGrad)" transform="matrix(2.347976331701461,0,0,2.347976331701461,82.65202366829854,2.141531461042721)">
+          <path d="M1.26 20 c-0.14 0 -0.26 -0.12 -0.26 -0.26 l0 -11.98 c0 -0.14 0.12 -0.26 0.26 -0.26 l4.78 0 c1.32 0 2.2 0.28 2.98 0.86 c1.08 0.78 1.52 2.26 1.02 3.52 c-0.26 0.64 -0.7 0.98 -1.3 1.3 c0.86 0.12 1.4 0.68 1.72 1.08 c0.46 0.6 0.7 1.32 0.7 2.16 c0 1.1 -0.44 2 -1.28 2.64 c-0.82 0.62 -1.94 0.94 -3.32 0.94 l-5.3 0 z M3.94 12.08 l1.96 0 c0.4 0 0.72 -0.08 0.94 -0.26 c0.2 -0.18 0.3 -0.42 0.3 -0.74 c0 -0.3 -0.1 -0.54 -0.3 -0.7 c-0.2 -0.18 -0.5 -0.26 -0.86 -0.26 l-2.04 0 l0 1.96 z M3.94 17.54 l2.34 0 c0.6 0 1.06 -0.12 1.4 -0.36 c0.3 -0.22 0.46 -0.52 0.46 -0.94 c0 -0.38 -0.16 -0.66 -0.46 -0.88 c-0.32 -0.22 -0.76 -0.34 -1.32 -0.34 l-2.42 0 l0 2.52 z M13.42 20 c-0.08 0 -0.16 -0.04 -0.2 -0.12 c-0.06 -0.06 -0.06 -0.16 -0.04 -0.24 l4.66 -11.98 c0.04 -0.1 0.14 -0.16 0.24 -0.16 l2.68 0 c0.1 0 0.2 0.06 0.24 0.16 l4.58 11.98 c0.02 0.08 0.02 0.16 -0.04 0.24 c-0.04 0.08 -0.12 0.12 -0.2 0.12 l-2.78 0 c-0.1 0 -0.2 -0.06 -0.24 -0.16 l-0.74 -1.84 l-4.5 0.02 l-0.74 1.82 c-0.04 0.1 -0.14 0.16 -0.24 0.16 l-2.68 0 z M17.9 15.5 l2.88 0 l-1.44 -4.24 z M27.46 20 c-0.14 0 -0.26 -0.12 -0.26 -0.26 l0 -11.98 c0 -0.14 0.12 -0.26 0.26 -0.26 l2.36 0 c0.08 0 0.16 0.04 0.22 0.1 l4.6 7.1 l0 -6.94 c0 -0.14 0.12 -0.26 0.26 -0.26 l2.46 0 c0.14 0 0.26 0.12 0.26 0.26 l0 11.98 c0 0.14 -0.12 0.26 -0.26 0.26 l-2.36 0 c-0.08 0 -0.16 -0.04 -0.22 -0.1 l-4.58 -7.06 l0 6.9 c0 0.14 -0.12 0.26 -0.26 0.26 l-2.48 0 z M39.88 20 c-0.14 0 -0.26 -0.12 -0.26 -0.26 l0 -11.98 c0 -0.14 0.12 -0.26 0.26 -0.26 l2.6 0 c0.14 0 0.26 0.12 0.26 0.26 l0 3.54 l3.62 -3.72 c0.06 -0.04 0.12 -0.08 0.2 -0.08 l3.02 0 c0.1 0 0.2 0.06 0.24 0.14 c0.04 0.1 0.02 0.2 -0.04 0.28 l-4.04 4.32 l4.5 7.34 c0.04 0.04 0.06 0.1 0.06 0.16 c0 0.14 -0.12 0.26 -0.26 0.26 l-3.12 0 c-0.08 0 -0.16 -0.04 -0.2 -0.12 l-3.3 -5.58 l-0.68 0.6 l0 4.84 c0 0.14 -0.12 0.26 -0.26 0.26 l-2.6 0 z M51.96 20 c-0.08 0 -0.16 -0.04 -0.2 -0.12 c-0.06 -0.06 -0.06 -0.16 -0.04 -0.24 l4.66 -11.98 c0.04 -0.1 0.14 -0.16 0.24 -0.16 l2.68 0 c0.1 0 0.2 0.06 0.24 0.16 l4.58 11.98 c0.02 0.08 0.02 0.16 -0.04 0.24 c-0.04 0.08 -0.12 0.12 -0.2 0.12 l-2.78 0 c-0.1 0 -0.2 -0.06 -0.24 -0.16 l-0.74 -1.84 l-4.5 0.02 l-0.74 1.82 c-0.04 0.1 -0.14 0.16 -0.24 0.16 l-2.68 0 z M56.44 15.5 l2.88 0 l-1.44 -4.24 z M66 20 c-0.14 0 -0.26 -0.12 -0.26 -0.26 l0 -11.98 c0 -0.14 0.12 -0.26 0.26 -0.26 l4.78 0 c1.32 0 2.2 0.28 2.98 0.86 c1.08 0.78 1.52 2.26 1.02 3.52 c-0.26 0.64 -0.7 0.98 -1.3 1.3 c0.86 0.12 1.4 0.68 1.72 1.08 c0.46 0.6 0.7 1.32 0.7 2.16 c0 1.1 -0.44 2 -1.28 2.64 c-0.82 0.62 -1.94 0.94 -3.32 0.94 l-5.3 0 z M68.68 12.08 l1.96 0 c0.4 0 0.72 -0.08 0.94 -0.26 c0.2 -0.18 0.3 -0.42 0.3 -0.74 c0 -0.3 -0.1 -0.54 -0.3 -0.7 c-0.2 -0.18 -0.5 -0.26 -0.86 -0.26 l-2.04 0 l0 1.96 z M68.68 17.54 l2.34 0 c0.6 0 1.06 -0.12 1.4 -0.36 c0.3 -0.22 0.46 -0.52 0.46 -0.94 c0 -0.38 -0.16 -0.66 -0.46 -0.88 c-0.32 -0.22 -0.76 -0.34 -1.32 -0.34 l-2.42 0 l0 2.52 z M78.16 20 c-0.14 0 -0.26 -0.12 -0.26 -0.26 l0 -11.98 c0 -0.14 0.12 -0.26 0.26 -0.26 l2.6 0 c0.14 0 0.26 0.12 0.26 0.26 l0 9.36 l4.5 0 c0.14 0 0.26 0.12 0.26 0.26 l0 2.36 c0 0.14 -0.12 0.26 -0.26 0.26 l-7.36 0 z M87.78 20 l0 -11.98 c0 -0.5 0.1 -0.6 0.26 -0.6 l8.76 0 c0.14 0 0.26 0.1 0.26 0.24 l0 2.26 c0 0.14 -0.12 0.26 -0.26 0.26 l-5.92 0 l0 2.08 l3.74 0 c0.14 0 0.26 0.12 0.26 0.26 l0 2.24 c0 0.14 -0.12 0.26 -0.26 0.26 l-3.74 0 l0 2.14 l5.9 0 c0.14 0 0.26 0.12 0.26 0.26 l0 2.24 c0 0.14 -0.12 0.26 -0.26 0.26 l-8.74 0 c-0.16 0 -0.26 -0.12 -0.26 0.08 z M104.72 20 c-0.14 0 -0.26 -0.12 -0.26 -0.26 l0 -11.98 c0 -0.14 0.12 -0.26 0.26 -0.26 l2.6 0 c0.14 0 0.26 0.12 0.26 0.26 l0 11.98 c0 0.14 -0.12 0.26 -0.26 0.26 l-2.6 0 z M117.74 21.38 c-0.08 0 -0.18 -0.06 -0.22 -0.14 l-0.6 -1.24 c-0.28 0.04 -0.58 0.06 -0.9 0.06 c-1.18 0 -2.28 -0.3 -3.26 -0.86 s-1.76 -1.34 -2.32 -2.32 s-0.86 -2.08 -0.86 -3.28 s0.3 -2.3 0.86 -3.28 s1.34 -1.74 2.3 -2.3 c0.98 -0.56 2.08 -0.84 3.28 -0.84 s2.3 0.28 3.28 0.84 c0.96 0.56 1.76 1.32 2.32 2.3 s0.84 2.08 0.84 3.28 c0 1.18 -0.28 2.3 -0.84 3.28 c-0.46 0.78 -1.04 1.42 -1.74 1.94 l1 2.14 c0.04 0.04 0.08 0.1 0.08 0.16 c0 0.14 -0.12 0.26 -0.26 0.26 l-2.96 0 z M115.58 17.14 l-0.8 -1.68 c-0.04 -0.04 -0.06 -0.1 -0.06 -0.16 c0 -0.14 0.12 -0.26 0.26 -0.26 l2.94 0 c0.1 0 0.18 0.06 0.24 0.14 l0.36 0.76 c0.12 -0.16 0.22 -0.34 0.32 -0.52 c0.3 -0.54 0.44 -1.16 0.44 -1.82 s-0.14 -1.26 -0.44 -1.8 c-0.28 -0.54 -0.68 -0.98 -1.18 -1.28 c-0.48 -0.32 -1.02 -0.46 -1.6 -0.46 s-1.14 0.14 -1.64 0.46 c-0.52 0.32 -0.92 0.74 -1.22 1.28 c-0.28 0.54 -0.44 1.14 -0.44 1.8 s0.16 1.26 0.46 1.8 s0.7 0.98 1.2 1.3 c0.36 0.22 0.76 0.38 1.16 0.44 z"/>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="bnkLogoWhite" viewBox="0 0 3162.08 734.83">
+      <g transform="scale(8.104052026013006) translate(10, 10)">
+        <g fill="#fff" transform="matrix(0.8865504081126907,0,0,0.8865504081126907,-12.065064686629364,-9.069410269162256)">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M80.11,49.695c0.003,5.951,1.481,10.771,3.303,10.771 c1.823,0,3.302-4.824,3.305-10.768c-0.003-5.951-1.479-10.773-3.303-10.773C81.591,38.926,80.107,43.748,80.11,49.695z"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M39.138,14.154c-15.075,6.26-25.529,19.93-25.529,35.779 c-0.004,15.852,10.454,29.52,25.536,35.777C30.504,78.232,24.764,65,24.764,49.934S30.508,21.637,39.138,14.154z"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M49.349,10.23c-7.066,0-12.803,17.854-12.803,39.857 c0,22.016,5.736,39.859,12.808,39.861c3.491-0.002,6.66-4.367,8.969-11.438c1.954,4.756,4.414,7.598,7.084,7.598 c6.367,0.002,11.532-16.066,11.527-35.883c0.005-19.816-5.156-35.887-11.521-35.879c-2.651,0-5.093,2.797-7.041,7.484 C56.057,14.668,52.871,10.234,49.349,10.23z M75.225,50.227c0.005,11.121-2.764,20.143-6.174,20.143 c-3.412,0-6.176-9.023-6.176-20.139c0-11.127,2.764-20.146,6.176-20.15C72.465,30.084,75.229,39.102,75.225,50.227z M57.792,23.318 c-2.395,6.576-3.907,16.191-3.907,26.908c-0.001,10.623,1.484,20.166,3.841,26.736c-1.15,1.559-2.418,2.424-3.748,2.424 c-5.202-0.004-9.414-13.117-9.414-29.299c0-16.174,4.212-29.293,9.407-29.293C55.333,20.797,56.626,21.701,57.792,23.318z"/>
+        </g>
+        <g fill="#fff" transform="matrix(2.347976331701461,0,0,2.347976331701461,82.65202366829854,2.141531461042721)">
+          <path d="M1.26 20 c-0.14 0 -0.26 -0.12 -0.26 -0.26 l0 -11.98 c0 -0.14 0.12 -0.26 0.26 -0.26 l4.78 0 c1.32 0 2.2 0.28 2.98 0.86 c1.08 0.78 1.52 2.26 1.02 3.52 c-0.26 0.64 -0.7 0.98 -1.3 1.3 c0.86 0.12 1.4 0.68 1.72 1.08 c0.46 0.6 0.7 1.32 0.7 2.16 c0 1.1 -0.44 2 -1.28 2.64 c-0.82 0.62 -1.94 0.94 -3.32 0.94 l-5.3 0 z M3.94 12.08 l1.96 0 c0.4 0 0.72 -0.08 0.94 -0.26 c0.2 -0.18 0.3 -0.42 0.3 -0.74 c0 -0.3 -0.1 -0.54 -0.3 -0.7 c-0.2 -0.18 -0.5 -0.26 -0.86 -0.26 l-2.04 0 l0 1.96 z M3.94 17.54 l2.34 0 c0.6 0 1.06 -0.12 1.4 -0.36 c0.3 -0.22 0.46 -0.52 0.46 -0.94 c0 -0.38 -0.16 -0.66 -0.46 -0.88 c-0.32 -0.22 -0.76 -0.34 -1.32 -0.34 l-2.42 0 l0 2.52 z M13.42 20 c-0.08 0 -0.16 -0.04 -0.2 -0.12 c-0.06 -0.06 -0.06 -0.16 -0.04 -0.24 l4.66 -11.98 c0.04 -0.1 0.14 -0.16 0.24 -0.16 l2.68 0 c0.1 0 0.2 0.06 0.24 0.16 l4.58 11.98 c0.02 0.08 0.02 0.16 -0.04 0.24 c-0.04 0.08 -0.12 0.12 -0.2 0.12 l-2.78 0 c-0.1 0 -0.2 -0.06 -0.24 -0.16 l-0.74 -1.84 l-4.5 0.02 l-0.74 1.82 c-0.04 0.1 -0.14 0.16 -0.24 0.16 l-2.68 0 z M17.9 15.5 l2.88 0 l-1.44 -4.24 z M27.46 20 c-0.14 0 -0.26 -0.12 -0.26 -0.26 l0 -11.98 c0 -0.14 0.12 -0.26 0.26 -0.26 l2.36 0 c0.08 0 0.16 0.04 0.22 0.1 l4.6 7.1 l0 -6.94 c0 -0.14 0.12 -0.26 0.26 -0.26 l2.46 0 c0.14 0 0.26 0.12 0.26 0.26 l0 11.98 c0 0.14 -0.12 0.26 -0.26 0.26 l-2.36 0 c-0.08 0 -0.16 -0.04 -0.22 -0.1 l-4.58 -7.06 l0 6.9 c0 0.14 -0.12 0.26 -0.26 0.26 l-2.48 0 z M39.88 20 c-0.14 0 -0.26 -0.12 -0.26 -0.26 l0 -11.98 c0 -0.14 0.12 -0.26 0.26 -0.26 l2.6 0 c0.14 0 0.26 0.12 0.26 0.26 l0 3.54 l3.62 -3.72 c0.06 -0.04 0.12 -0.08 0.2 -0.08 l3.02 0 c0.1 0 0.2 0.06 0.24 0.14 c0.04 0.1 0.02 0.2 -0.04 0.28 l-4.04 4.32 l4.5 7.34 c0.04 0.04 0.06 0.1 0.06 0.16 c0 0.14 -0.12 0.26 -0.26 0.26 l-3.12 0 c-0.08 0 -0.16 -0.04 -0.2 -0.12 l-3.3 -5.58 l-0.68 0.6 l0 4.84 c0 0.14 -0.12 0.26 -0.26 0.26 l-2.6 0 z M51.96 20 c-0.08 0 -0.16 -0.04 -0.2 -0.12 c-0.06 -0.06 -0.06 -0.16 -0.04 -0.24 l4.66 -11.98 c0.04 -0.1 0.14 -0.16 0.24 -0.16 l2.68 0 c0.1 0 0.2 0.06 0.24 0.16 l4.58 11.98 c0.02 0.08 0.02 0.16 -0.04 0.24 c-0.04 0.08 -0.12 0.12 -0.2 0.12 l-2.78 0 c-0.1 0 -0.2 -0.06 -0.24 -0.16 l-0.74 -1.84 l-4.5 0.02 l-0.74 1.82 c-0.04 0.1 -0.14 0.16 -0.24 0.16 l-2.68 0 z M56.44 15.5 l2.88 0 l-1.44 -4.24 z M66 20 c-0.14 0 -0.26 -0.12 -0.26 -0.26 l0 -11.98 c0 -0.14 0.12 -0.26 0.26 -0.26 l4.78 0 c1.32 0 2.2 0.28 2.98 0.86 c1.08 0.78 1.52 2.26 1.02 3.52 c-0.26 0.64 -0.7 0.98 -1.3 1.3 c0.86 0.12 1.4 0.68 1.72 1.08 c0.46 0.6 0.7 1.32 0.7 2.16 c0 1.1 -0.44 2 -1.28 2.64 c-0.82 0.62 -1.94 0.94 -3.32 0.94 l-5.3 0 z M68.68 12.08 l1.96 0 c0.4 0 0.72 -0.08 0.94 -0.26 c0.2 -0.18 0.3 -0.42 0.3 -0.74 c0 -0.3 -0.1 -0.54 -0.3 -0.7 c-0.2 -0.18 -0.5 -0.26 -0.86 -0.26 l-2.04 0 l0 1.96 z M68.68 17.54 l2.34 0 c0.6 0 1.06 -0.12 1.4 -0.36 c0.3 -0.22 0.46 -0.52 0.46 -0.94 c0 -0.38 -0.16 -0.66 -0.46 -0.88 c-0.32 -0.22 -0.76 -0.34 -1.32 -0.34 l-2.42 0 l0 2.52 z M78.16 20 c-0.14 0 -0.26 -0.12 -0.26 -0.26 l0 -11.98 c0 -0.14 0.12 -0.26 0.26 -0.26 l2.6 0 c0.14 0 0.26 0.12 0.26 0.26 l0 9.36 l4.5 0 c0.14 0 0.26 0.12 0.26 0.26 l0 2.36 c0 0.14 -0.12 0.26 -0.26 0.26 l-7.36 0 z M87.78 20 l0 -11.98 c0 -0.5 0.1 -0.6 0.26 -0.6 l8.76 0 c0.14 0 0.26 0.1 0.26 0.24 l0 2.26 c0 0.14 -0.12 0.26 -0.26 0.26 l-5.92 0 l0 2.08 l3.74 0 c0.14 0 0.26 0.12 0.26 0.26 l0 2.24 c0 0.14 -0.12 0.26 -0.26 0.26 l-3.74 0 l0 2.14 l5.9 0 c0.14 0 0.26 0.12 0.26 0.26 l0 2.24 c0 0.14 -0.12 0.26 -0.26 0.26 l-8.74 0 c-0.16 0 -0.26 -0.12 -0.26 0.08 z M104.72 20 c-0.14 0 -0.26 -0.12 -0.26 -0.26 l0 -11.98 c0 -0.14 0.12 -0.26 0.26 -0.26 l2.6 0 c0.14 0 0.26 0.12 0.26 0.26 l0 11.98 c0 0.14 -0.12 0.26 -0.26 0.26 l-2.6 0 z M117.74 21.38 c-0.08 0 -0.18 -0.06 -0.22 -0.14 l-0.6 -1.24 c-0.28 0.04 -0.58 0.06 -0.9 0.06 c-1.18 0 -2.28 -0.3 -3.26 -0.86 s-1.76 -1.34 -2.32 -2.32 s-0.86 -2.08 -0.86 -3.28 s0.3 -2.3 0.86 -3.28 s1.34 -1.74 2.3 -2.3 c0.98 -0.56 2.08 -0.84 3.28 -0.84 s2.3 0.28 3.28 0.84 c0.96 0.56 1.76 1.32 2.32 2.3 s0.84 2.08 0.84 3.28 c0 1.18 -0.28 2.3 -0.84 3.28 c-0.46 0.78 -1.04 1.42 -1.74 1.94 l1 2.14 c0.04 0.04 0.08 0.1 0.08 0.16 c0 0.14 -0.12 0.26 -0.26 0.26 l-2.96 0 z M115.58 17.14 l-0.8 -1.68 c-0.04 -0.04 -0.06 -0.1 -0.06 -0.16 c0 -0.14 0.12 -0.26 0.26 -0.26 l2.94 0 c0.1 0 0.18 0.06 0.24 0.14 l0.36 0.76 c0.12 -0.16 0.22 -0.34 0.32 -0.52 c0.3 -0.54 0.44 -1.16 0.44 -1.82 s-0.14 -1.26 -0.44 -1.8 c-0.28 -0.54 -0.68 -0.98 -1.18 -1.28 c-0.48 -0.32 -1.02 -0.46 -1.6 -0.46 s-1.14 0.14 -1.64 0.46 c-0.52 0.32 -0.92 0.74 -1.22 1.28 c-0.28 0.54 -0.44 1.14 -0.44 1.8 s0.16 1.26 0.46 1.8 s0.7 0.98 1.2 1.3 c0.36 0.22 0.76 0.38 1.16 0.44 z"/>
+        </g>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="container nav-inner">
+    <a href="#top" class="logo-wrap" aria-label="Bankable home">
+      <svg aria-hidden="true"><use href="#bnkLogoColor"/></svg>
+    </a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a class="nav-link" href="#systems">Systems</a>
+      <a class="nav-link" href="#funding-system">Multi-Round Funding</a>
+      <a class="nav-link" href="#advisor">For Advisors</a>
+      <a class="nav-link" href="#pricing">Pricing</a>
+      <a class="nav-link" href="#guide">About</a>
+    </nav>
+    <div class="nav-cta-wrap">
+      <a class="btn btn-primary nav-cta" href="#hero-cta">Run Your Free Scan</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Mobile menu">
+  <div class="mobile-menu-panel">
+    <button class="mobile-menu-close" id="menuClose" aria-label="Close menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <a href="#systems">Systems</a>
+    <a href="#funding-system">Multi-Round Funding</a>
+    <a href="#advisor">For Advisors</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#guide">About</a>
+    <a class="btn btn-primary" href="#hero-cta">Run Your Free Scan</a>
+  </div>
+</div>
+
+<main id="top">
+
+<!-- ============ S1 — HERO (verbatim H1 + period-cadence sub) ============ -->
+<section class="hero" id="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">Capital Readiness Platform</span>
+        <h1 class="h-display hero-headline">Most business owners don&rsquo;t have a funding problem first. <span class="gradient-text">They have a readiness problem.</span></h1>
+        <p class="period-cadence"><span class="pc-strong">Diagnose.</span> <span class="pc-strong">Plan.</span> <span class="pc-strong">Install.</span> <span class="pc-strong">Fund.</span> <span class="pc-strong">Scale.</span> <span class="pc-strong">Defend.</span> <span class="pc-strong">Exit.</span> <span class="pc-muted">One platform. One advisor. Seven systems.</span></p>
+        <p class="hero-sub">Run your free 12-minute <strong>Bankable IQ scan</strong>. No credit pull. No bank login. Get your <strong>Capital Growth Plan</strong> in 24 hours &mdash; and we&rsquo;ll <strong>install</strong> the seven systems your business needs to become bankable.</p>
+        <div class="def-badge" role="note" aria-label="Definition of Bankable">
+          <span class="def-icon" aria-hidden="true">B</span>
+          <span><strong>Bankable</strong> &middot; <em>/&lsquo;ba&#331;-k&#601;-b&#601;l/</em> &middot; adj. &mdash; in a state where a real lender will offer you real money on real terms.</span>
+        </div>
+        <div class="hero-cta-row" id="hero-cta">
+          <a class="btn btn-primary btn-lg btn-arrow" href="#final-cta">Run Your Free Scan</a>
+          <a class="btn btn-secondary btn-lg" href="#advisor">Become a Bankable Advisor</a>
+        </div>
+        <p class="hero-trust"><strong>Not a lender, broker, or credit repair shop.</strong> An education and capital-readiness platform.</p>
+      </div>
+      <div class="hero-visual">
+        <div class="score-card" role="img" aria-label="Sample Bankable Score, 62 out of 100, estimate">
+          <div class="score-card-head">
+            <div>
+              <p class="score-card-title">Bankable Score&trade;</p>
+              <p class="score-card-sub">Sample scan output</p>
+            </div>
+            <span class="score-est-pill" title="Estimate label per compliance discipline">Estimate</span>
+          </div>
+          <div class="score-ring-wrap">
+            <svg class="score-ring" viewBox="0 0 220 220" aria-hidden="true">
+              <defs>
+                <linearGradient id="scoreGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#2d388a"/>
+                  <stop offset="100%" stop-color="#00aeef"/>
+                </linearGradient>
+              </defs>
+              <circle class="track" cx="110" cy="110" r="92"/>
+              <circle id="scoreFill" class="fill" cx="110" cy="110" r="92" stroke-dasharray="578" stroke-dashoffset="578"/>
+            </svg>
+            <div class="score-ring-num">
+              <div class="score-ring-num-inner">
+                <div class="num tab-nums" id="scoreNum">62</div>
+                <div class="denom">/ 100</div>
+              </div>
+            </div>
+          </div>
+          <div class="score-meta">
+            <div class="score-meta-item">
+              <p class="lbl">Stage</p>
+              <p class="val">Stabilization</p>
+            </div>
+            <div class="score-meta-item">
+              <p class="lbl">Pathway</p>
+              <p class="val">Constrained</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ S2 — AI COACH SHOWCASE (Instead chat-UI) ============ -->
+<section class="coach-band" id="coach" aria-label="Conversational AI Coach showcase">
+  <div class="container">
+    <div class="coach-grid">
+      <div class="coach-copy">
+        <span class="eyebrow">Meet your Bankable IQ AI Coach <span class="release-tag soon" style="margin-left:8px">Coming soon</span></span>
+        <h2 class="h2">Ask the system anything. Get a real answer, not a sales pitch.</h2>
+        <p class="lede">Your Bankable IQ Coach reads your scan, knows your stage, and answers from inside your real Capital Growth Plan. Not a chatbot. A coordinated agent that thinks across all seven installed systems.</p>
+        <ul style="list-style: none; padding: 0; margin: 16px 0 24px; display: flex; flex-direction: column; gap: 10px;">
+          <li style="padding-left: 22px; position: relative; font-size: 14.5px; color: var(--bnk-text-secondary);"><span style="position:absolute; left:0; color: var(--bnk-primary); font-weight: 700;">→</span> Reads your live Bankable Score and dimension breakdown</li>
+          <li style="padding-left: 22px; position: relative; font-size: 14.5px; color: var(--bnk-text-secondary);"><span style="position:absolute; left:0; color: var(--bnk-primary); font-weight: 700;">→</span> Hedges every recommendation &mdash; never says &ldquo;you&rsquo;ll get approved&rdquo;</li>
+          <li style="padding-left: 22px; position: relative; font-size: 14.5px; color: var(--bnk-text-secondary);"><span style="position:absolute; left:0; color: var(--bnk-primary); font-weight: 700;">→</span> Hands off to your Certified Capital Readiness Advisor for anything regulated</li>
+        </ul>
+        <a class="btn btn-secondary btn-arrow" href="#final-cta">Sign in to get your personalized plan</a>
+      </div>
+      <div class="coach-chat" aria-label="AI Coach sample conversation">
+        <div class="coach-chat-head">
+          <div class="coach-avatar">B</div>
+          <div>
+            <div class="coach-title">Bankable IQ Coach</div>
+            <div class="coach-sub">Reasoning across your installed systems</div>
+          </div>
+          <span class="coach-status-pill">Live mock</span>
+        </div>
+        <div class="coach-chat-body" id="coachChatBody">
+          <div class="chat-msg user">
+            <span class="chat-msg-avatar">YO</span>
+            <div class="chat-bubble">How does my business become bankable?</div>
+          </div>
+          <div class="chat-msg ai">
+            <span class="chat-msg-avatar">B</span>
+            <div class="chat-bubble" id="aiReply1">
+              <span id="aiReply1Text">Start with the 12-minute Bankable IQ scan so we have a real baseline. Then, based on your score and stage, we install the systems in priority order:</span>
+              <span class="chat-step">Run the diagnostic and compute your Bankable Score&trade;.</span>
+              <span class="chat-step">Read your Capital Growth Plan in 24 hours.</span>
+              <span class="chat-step">Install Capital Readiness first &mdash; every other system builds on it.</span>
+              <div class="chat-reasoning">Based on patterns from similar businesses at Stage 2. Estimate only &mdash; lending decisions are made by independent lenders.</div>
+            </div>
+          </div>
+          <div class="chat-msg user">
+            <span class="chat-msg-avatar">YO</span>
+            <div class="chat-bubble">Should I take this MCA offer at 1.42 factor?</div>
+          </div>
+          <div class="chat-msg ai">
+            <span class="chat-msg-avatar">B</span>
+            <div class="chat-bubble">
+              Hedged answer: a 1.42 factor on a 6-month MCA implies an APR-equivalent north of 80%. Before deciding, three things:
+              <span class="chat-step">Does the use of capital generate a return above that cost? If not, this is destructive capital.</span>
+              <span class="chat-step">What does this do to your debt-service ratio &mdash; it will likely block bank capital for 9&ndash;12 months.</span>
+              <span class="chat-step">Loop in your advisor before you sign. This is a Capital Pathway decision.</span>
+              <div class="chat-reasoning">Not advice. Decision support only. Your Certified Capital Readiness Advisor walks the actual call.</div>
+            </div>
+          </div>
+        </div>
+        <div class="coach-chat-input">
+          <input type="text" placeholder="Ask anything about your readiness, score, or next move..." aria-label="Ask the coach" />
+          <button class="send-btn" aria-label="Send">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+        </div>
+        <div class="coach-chat-foot">Live AI Coach launches with the v1 platform. Today &mdash; <a href="#final-cta">run the free scan</a> and your Capital Growth Plan answers these by hand.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span class="marquee-item">12-minute scan</span>
+    <span class="marquee-item">No credit pull</span>
+    <span class="marquee-item">No bank login</span>
+    <span class="marquee-item">Capital Growth Plan in 24 hours</span>
+    <span class="marquee-item">Seven installed systems</span>
+    <span class="marquee-item">One Certified Capital Readiness Advisor</span>
+    <span class="marquee-item">Year-round Bankable Tax</span>
+    <span class="marquee-item">Multi-round funding system</span>
+    <span class="marquee-item">12-minute scan</span>
+    <span class="marquee-item">No credit pull</span>
+    <span class="marquee-item">No bank login</span>
+    <span class="marquee-item">Capital Growth Plan in 24 hours</span>
+    <span class="marquee-item">Seven installed systems</span>
+    <span class="marquee-item">Multi-round funding system</span>
+  </div>
+</div>
+
+<!-- ============ S3 — FIVE-CARD BO AVATAR SCROLL BAND ============ -->
+<section class="avatar-band" aria-label="Business owner avatar self-selection">
+  <div class="container">
+    <div class="avatar-band-head">
+      <span class="eyebrow">Are you in one of these five rooms?</span>
+      <h2 class="h2">Five business owners. One installed platform.</h2>
+      <p class="lede">Bankable installs the systems for operators wherever you are in your story. Pick the one that sounds like you.</p>
+    </div>
+    <div class="avatar-scroll">
+      <a class="avatar-card" href="#final-cta">
+        <span class="avatar-num">1</span>
+        <h4>The Rejected Realist</h4>
+        <p class="avatar-quote">&ldquo;I applied for a real loan. They said no. Now I&rsquo;m running on MCAs and credit cards.&rdquo;</p>
+        <span class="avatar-tag">This is me &rarr;</span>
+      </a>
+      <a class="avatar-card" href="#final-cta">
+        <span class="avatar-num">2</span>
+        <h4>The Unaware Operator</h4>
+        <p class="avatar-quote">&ldquo;I&rsquo;ve never even tried for a real bank loan &mdash; I don&rsquo;t think I&rsquo;d qualify.&rdquo;</p>
+        <span class="avatar-tag">This is me &rarr;</span>
+      </a>
+      <a class="avatar-card" href="#final-cta">
+        <span class="avatar-num">3</span>
+        <h4>The Lost Starter</h4>
+        <p class="avatar-quote">&ldquo;I&rsquo;m just starting out. I don&rsquo;t even know what I&rsquo;m supposed to be doing.&rdquo;</p>
+        <span class="avatar-tag">This is me &rarr;</span>
+      </a>
+      <a class="avatar-card" href="#final-cta">
+        <span class="avatar-num">4</span>
+        <h4>The Growth-Stuck Operator</h4>
+        <p class="avatar-quote">&ldquo;Revenue&rsquo;s fine. But I can&rsquo;t seem to break through to real institutional capital.&rdquo;</p>
+        <span class="avatar-tag">This is me &rarr;</span>
+      </a>
+      <a class="avatar-card" href="#final-cta">
+        <span class="avatar-num">5</span>
+        <h4>The Exit-Curious Owner</h4>
+        <p class="avatar-quote">&ldquo;I&rsquo;ve built something. I wonder what it&rsquo;s actually worth &mdash; and if anyone would buy it.&rdquo;</p>
+        <span class="avatar-tag">This is me &rarr;</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ S4 — PERSONA-TARGETED QUESTION CARDS (Instead pattern) ============ -->
+<section class="persona-band" aria-label="Persona-targeted question cards">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Who are you?</span>
+      <h2 class="h2">Three ways in. One platform.</h2>
+      <p class="lede">Tell us who you are. We&rsquo;ll show you which install path fits &mdash; and what the first move looks like.</p>
+    </div>
+    <div class="persona-grid">
+      <div class="persona-card">
+        <span class="persona-tag"><span class="persona-dot"></span> Business owners</span>
+        <h3>You run the business.</h3>
+        <div>
+          <p class="persona-sample-label">Sample question</p>
+          <div class="persona-sample">&ldquo;I&rsquo;ve been told no by my bank. Where do I start?&rdquo;</div>
+        </div>
+        <p class="persona-meta">Free 12-minute scan. Capital Growth Plan in 24 hours. Seven systems installed.</p>
+        <a class="btn btn-primary btn-arrow persona-cta" href="#final-cta">Run your free scan</a>
+      </div>
+      <div class="persona-card">
+        <span class="persona-tag"><span class="persona-dot"></span> Capital Readiness Advisors</span>
+        <h3>You serve business owners.</h3>
+        <div>
+          <p class="persona-sample-label">Sample question</p>
+          <div class="persona-sample">&ldquo;I want to deliver all seven systems to my clients. How?&rdquo;</div>
+        </div>
+        <p class="persona-meta">CCRA certification. Founding Cohort of 500. $34,985 value stack, $97/mo locked.</p>
+        <a class="btn btn-primary btn-arrow persona-cta" href="#advisor">Apply to the Founding Cohort</a>
+      </div>
+      <div class="persona-card">
+        <span class="persona-tag"><span class="persona-dot"></span> Accountants & coaches</span>
+        <h3>You already have a practice.</h3>
+        <div>
+          <p class="persona-sample-label">Sample question</p>
+          <div class="persona-sample">&ldquo;How does Bankable fit my existing practice?&rdquo;</div>
+        </div>
+        <p class="persona-meta">Add capital, tax, and valuation lines without changing what you already do well.</p>
+        <a class="btn btn-secondary btn-arrow persona-cta" href="#advisor">See the certification path</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ S5 — BIG STAT NUMBERS BAND (Instead pattern) ============ -->
+<section class="big-stats-band" aria-label="Bankable in numbers">
+  <div class="container">
+    <div class="big-stats-head">
+      <span class="eyebrow on-dark" style="justify-content: center;">Bankable in numbers</span>
+      <h2 class="h2">A platform built to install at scale.</h2>
+      <p class="lede" style="margin-left: auto; margin-right: auto;">Pre-launch, illustrative targets. The platform is the expert. The advisor is the relationship. The numbers tell you the reach.</p>
+    </div>
+    <div class="big-stats-grid" id="bigStatsGrid">
+      <div class="big-stat">
+        <div class="big-stat-num tab-nums" data-target="7" data-prefix="" data-suffix="">0</div>
+        <div class="big-stat-lbl">Systems installed for every client</div>
+      </div>
+      <div class="big-stat">
+        <div class="big-stat-num tab-nums" data-target="20" data-prefix="" data-suffix="">0</div>
+        <div class="big-stat-lbl">CCRA curriculum modules across 5 phases</div>
+      </div>
+      <div class="big-stat">
+        <div class="big-stat-num tab-nums" data-target="500" data-prefix="" data-suffix="">0</div>
+        <div class="big-stat-lbl">Founding-cohort seats &mdash; enforced cap</div>
+      </div>
+      <div class="big-stat">
+        <div class="big-stat-num tab-nums" data-target="5" data-prefix="" data-suffix="">0</div>
+        <div class="big-stat-lbl">Business-owner profiles supported</div>
+      </div>
+      <div class="big-stat">
+        <div class="big-stat-num tab-nums" data-target="50" data-prefix="" data-suffix="">0</div>
+        <div class="big-stat-lbl">States &mdash; nationwide advisor + lender network</div>
+      </div>
+      <div class="big-stat">
+        <div class="big-stat-num tab-nums" data-target="4" data-prefix="" data-suffix="">0</div>
+        <div class="big-stat-lbl">Income Events in the Multi-Round Funding System</div>
+      </div>
+    </div>
+    <p class="illustrative-foot">Numbers are pre-launch targets used for product planning and illustrative communication. Live counts will replace these placeholders at launch. The Bankable Score is an estimate, not a credit decision.</p>
+  </div>
+</section>
+
+<!-- ============ S6 — DUAL-DOOR FORK ============ -->
+<section class="fork-band" id="fork" aria-label="Two doors fork">
+  <div class="container">
+    <div class="fork-head">
+      <span class="eyebrow">Two doors. One platform.</span>
+      <h2 class="h2">Choose where to start.</h2>
+      <p class="lede">Bankable installs systems for business owners who want to become bankable &mdash; and certifies the professionals who deliver that work to their clients.</p>
+    </div>
+    <div class="fork-grid">
+      <a class="door-card" href="#final-cta">
+        <span class="door-eyebrow">Door 1 &middot; Business Owner</span>
+        <div class="door-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 9h1M9 13h1M9 17h1M14 9h1M14 13h1M14 17h1"/></svg>
+        </div>
+        <h3>I run a business. Install the systems for me.</h3>
+        <p class="door-quote">&ldquo;I want to know where I really stand &mdash; and what to install, fix, and build to get there.&rdquo;</p>
+        <ul>
+          <li>Free 12-minute Bankable IQ scan</li>
+          <li>Capital Growth Plan in 24 hours</li>
+          <li>One advisor across seven installed systems</li>
+        </ul>
+        <div class="door-cta">
+          <span class="btn btn-primary btn-arrow">Run Your Free Scan</span>
+        </div>
+      </a>
+      <a class="door-card" href="#advisor">
+        <span class="door-eyebrow">Door 2 &middot; Capital Readiness Advisor</span>
+        <div class="door-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="4"/><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><path d="M16 11l2 2 4-4"/></svg>
+        </div>
+        <h3>I help business owners. Certify me to install these systems.</h3>
+        <p class="door-quote">&ldquo;I want a credentialed practice that delivers what my clients actually need &mdash; without the MLM or the state license.&rdquo;</p>
+        <ul>
+          <li>20-module CCRA curriculum across 5 phases</li>
+          <li>Platform does the technical work &mdash; you keep the relationship</li>
+          <li>Founding Cohort &mdash; 500 seats only</li>
+        </ul>
+        <div class="door-cta">
+          <span class="btn btn-secondary btn-arrow">Apply to the Founding Cohort</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ S7 — FIVE VENDOR PROBLEM ============ -->
+<section class="section-raised" aria-label="The five-vendor problem">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">The pattern you've lived</span>
+      <h2 class="h2">None of them can see the whole picture.</h2>
+      <p class="lede">Your bookkeeper handles the books. Your tax preparer shows up in March. Your marketing agency runs ads. Your business coach gives advice. And whoever called you about funding last week wants you to take expensive non-bank capital. <strong>None of them talks to the others.</strong></p>
+    </div>
+    <div class="vendor-stage">
+      <div class="vendor-blobs" id="vendorBlobs">
+        <div class="vendor-blob"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg><span>Your bookkeeper</span></div>
+        <div class="vendor-blob"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg><span>Your tax preparer</span></div>
+        <div class="vendor-blob"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9c1.66 0 3.22.45 4.56 1.24"/><path d="M22 4L12 14.01l-3-3"/></svg><span>Your marketing agency</span></div>
+        <div class="vendor-blob"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><span>Your business coach</span></div>
+        <div class="vendor-blob"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>Whoever called you about funding</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ S8 — ASPIRATIONAL HUB ============ -->
+<section aria-label="What it looks like when it's built right">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">What it looks like when it&rsquo;s installed right</span>
+      <h2 class="h2">One advisor. One platform. Seven systems. Your business finally moves as one.</h2>
+      <p class="lede">Bankable installs the diagnostic, the multi-round funding system, the growth marketing system, the financial operating system, the year-round tax system, the academy, and the exit-readiness system &mdash; under one Certified Capital Readiness Advisor and one platform price.</p>
+    </div>
+    <div class="hub-stage">
+      <svg class="hub-svg" viewBox="0 0 600 600" aria-hidden="true">
+        <defs>
+          <linearGradient id="hubGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#2d388a" stop-opacity="0.6"/>
+            <stop offset="100%" stop-color="#00aeef" stop-opacity="0.6"/>
+          </linearGradient>
+        </defs>
+        <g stroke="url(#hubGrad)" stroke-width="1.5" fill="none">
+          <line x1="300" y1="300" x2="300" y2="80"/>
+          <line x1="300" y1="300" x2="490" y2="160"/>
+          <line x1="300" y1="300" x2="540" y2="370"/>
+          <line x1="300" y1="300" x2="430" y2="520"/>
+          <line x1="300" y1="300" x2="170" y2="520"/>
+          <line x1="300" y1="300" x2="60" y2="370"/>
+          <line x1="300" y1="300" x2="110" y2="160"/>
+        </g>
+        <g fill="#fff" stroke="#137DC5" stroke-width="2">
+          <circle cx="300" cy="80" r="12"/>
+          <circle cx="490" cy="160" r="12"/>
+          <circle cx="540" cy="370" r="12"/>
+          <circle cx="430" cy="520" r="12"/>
+          <circle cx="170" cy="520" r="12"/>
+          <circle cx="60" cy="370" r="12"/>
+          <circle cx="110" cy="160" r="12"/>
+        </g>
+      </svg>
+      <div class="hub-hub-label">
+        <div class="hub-eyebrow">The hub</div>
+        <div class="hub-title">Bankable IQ + your Certified Capital Readiness Advisor</div>
+      </div>
+      <div class="hub-pillar" style="left: 50%; top: 8%; transform: translateX(-50%);">Capital Readiness System</div>
+      <div class="hub-pillar" style="left: 82%; top: 22%; transform: translateX(-50%);">Multi-Round Funding System</div>
+      <div class="hub-pillar" style="left: 90%; top: 62%; transform: translateX(-50%);">Growth Marketing System</div>
+      <div class="hub-pillar" style="left: 72%; top: 88%; transform: translateX(-50%);">Bankable Tax System</div>
+      <div class="hub-pillar" style="left: 28%; top: 88%; transform: translateX(-50%);">Financial Operating System</div>
+      <div class="hub-pillar" style="left: 10%; top: 62%; transform: translateX(-50%);">Bankable Academy System</div>
+      <div class="hub-pillar" style="left: 18%; top: 22%; transform: translateX(-50%);">Exit Readiness System</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ S9 — GUIDE ============ -->
+<section id="guide" class="section-raised" aria-label="The guide introduces himself">
+  <div class="container">
+    <div class="guide-grid">
+      <div class="founder-portrait" aria-label="Kevin Murphy, founder">
+        <svg viewBox="0 0 280 280" aria-hidden="true">
+          <defs>
+            <linearGradient id="portraitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#2d388a" stop-opacity="0.18"/>
+              <stop offset="100%" stop-color="#00aeef" stop-opacity="0.10"/>
+            </linearGradient>
+            <linearGradient id="portraitSkin" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#137DC5"/>
+              <stop offset="100%" stop-color="#0E5E94"/>
+            </linearGradient>
+          </defs>
+          <rect width="280" height="280" fill="url(#portraitGrad)"/>
+          <circle cx="140" cy="108" r="46" fill="url(#portraitSkin)" opacity="0.9"/>
+          <path d="M50 280 C 50 220 90 178 140 178 C 190 178 230 220 230 280 Z" fill="url(#portraitSkin)" opacity="0.9"/>
+          <circle cx="140" cy="108" r="46" fill="none" stroke="#fff" stroke-width="2" opacity="0.4"/>
+        </svg>
+      </div>
+      <div>
+        <span class="eyebrow">Who built this</span>
+        <p class="auth-marker">After watching 500+ small business owners get told no by traditional banks &mdash; or never even try &mdash; I built the thing they actually needed: a platform that installs the systems instead of selling them a course.</p>
+        <h2 class="h2">Kevin Murphy. Founder of Bankable.</h2>
+        <p>The capital system isn&rsquo;t designed to tell you the truth. I spent years inside it watching the same pattern: business owners getting turned down, getting handed off, getting nowhere. Bankable is the system I wish every one of those operators had walked into &mdash; the platform that runs the diagnostic, the advisor who walks the relationship, and the seven installed systems so you don&rsquo;t have to assemble five vendors to get one outcome.</p>
+        <p><strong>The platform is the expert. The advisor is the relationship. We install. You operate.</strong> Everything follows from that.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ S10 — 3-STEP PLAN ============ -->
+<section id="plan" aria-label="The plan in three steps">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">The plan</span>
+      <h2 class="h2">Three steps from where you are to bankable.</h2>
+      <p class="lede">No 18-month consulting engagement. No five-vendor handoffs. Three steps you can start in twelve minutes.</p>
+    </div>
+    <div class="plan-grid" id="planGrid">
+      <div class="plan-card">
+        <span class="plan-number">STEP 01</span>
+        <div class="plan-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M9 11l2 2 4-4"/><line x1="9" y1="17" x2="15" y2="17"/></svg>
+        </div>
+        <h3>Run your free Bankable IQ scan.</h3>
+        <span class="specifics">12 min &middot; No credit pull &middot; No bank login</span>
+        <p>The 47-question diagnostic that lenders actually evaluate. You see your Bankable Score&trade; (0&ndash;100) the moment it&rsquo;s computed.</p>
+      </div>
+      <div class="plan-card">
+        <span class="plan-number">STEP 02</span>
+        <div class="plan-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 12 7 12 9 6 13 18 15 12 23 12"/></svg>
+        </div>
+        <h3>Get your Capital Growth Plan in 24 hours.</h3>
+        <span class="specifics">Your score &middot; Your stage &middot; Your next moves</span>
+        <p>A real PDF roadmap that names where you stand, what stage you&rsquo;re in, and the exact right-now next moves in priority order.</p>
+      </div>
+      <div class="plan-card">
+        <span class="plan-number">STEP 03</span>
+        <div class="plan-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Your advisor <span class="install-em">installs the seven systems</span> your business needs.</h3>
+        <span class="specifics">One relationship &middot; One platform &middot; One price</span>
+        <p>Your Certified Capital Readiness Advisor walks you through interpretation, prioritization, and delivery across as many of the seven installed systems as your business needs.</p>
+      </div>
+    </div>
+    <div style="text-align: center; margin-top: 40px;">
+      <a class="btn btn-primary btn-lg btn-arrow" href="#final-cta">Run Your Free Scan</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ S11 — COMMUNITY + STATS BAND ============ -->
+<section class="stats-band" aria-label="Community and stats">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">You're not the only one.</span>
+      <h2 class="h2">A community of operators &mdash; and the advisors who serve them.</h2>
+    </div>
+    <div class="stats-grid" id="statsGrid">
+      <div class="stat-cell">
+        <div class="stat-num tab-nums" data-target="500" data-suffix="">0</div>
+        <div class="stat-lbl">Capital Readiness Advisors in the Founding Cohort</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-num tab-nums" data-target="2400" data-suffix="">0</div>
+        <div class="stat-lbl">business owners scored with the Bankable IQ scan</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-num tab-nums" data-target="3100" data-suffix="">0</div>
+        <div class="stat-lbl">Capital Growth Plans delivered</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-num tab-nums" data-target="50" data-suffix="">0</div>
+        <div class="stat-lbl">states served &mdash; one national community</div>
+      </div>
+    </div>
+    <p class="illustrative-note">Numbers shown are illustrative pre-launch targets and not yet verified live counts. Live data feed will replace these placeholders at launch.</p>
+  </div>
+</section>
+
+<!-- ============ S12 — INSTALL TERMINAL ============ -->
+<section class="install-band" aria-label="What install means">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">What we mean by "install"</span>
+      <h2 class="h2">We don&rsquo;t hand you a course. <span class="gradient-text">We install the systems.</span></h2>
+      <p class="lede">Most platforms sell you a dashboard and walk away. Bankable installs the seven systems your business needs &mdash; one at a time, in the right order, with your advisor doing the work alongside you.</p>
+    </div>
+    <div class="install-stage">
+      <div class="install-header">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="label">bankable_install.log &nbsp;&middot;&nbsp; in progress</span>
+      </div>
+      <div class="install-list" id="installList">
+        <div class="install-row">
+          <span class="install-check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+          <span class="install-text"><span class="install-name">The Capital Readiness System</span> &mdash; diagnostic, score, roadmap.</span>
+          <span class="install-status">Installed</span>
+        </div>
+        <div class="install-row">
+          <span class="install-check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+          <span class="install-text"><span class="install-name">The Multi-Round Funding System</span> &mdash; IE1 to IE2 to IE3 to Institutional.</span>
+          <span class="install-status">Installed</span>
+        </div>
+        <div class="install-row">
+          <span class="install-check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+          <span class="install-text"><span class="install-name">The Growth Marketing System</span> &mdash; funnels, ads, CRM. Built for you. You own it.</span>
+          <span class="install-status">Installed</span>
+        </div>
+        <div class="install-row">
+          <span class="install-check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+          <span class="install-text"><span class="install-name">The Financial Operating System</span> &mdash; cash flow model, dashboard, decision frameworks.</span>
+          <span class="install-status">Installed</span>
+        </div>
+        <div class="install-row">
+          <span class="install-check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+          <span class="install-text"><span class="install-name">The Bankable Tax System</span> &mdash; research, planning, filing, defense, IRS monitoring.</span>
+          <span class="install-status">Installed</span>
+        </div>
+        <div class="install-row">
+          <span class="install-check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+          <span class="install-text"><span class="install-name">The Bankable Academy System</span> &mdash; curriculum + ongoing business education.</span>
+          <span class="install-status">Installed</span>
+        </div>
+        <div class="install-row">
+          <span class="install-check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+          <span class="install-text"><span class="install-name">The Exit Readiness System</span> &mdash; valuation, asking-price, buyer-readiness.</span>
+          <span class="install-status">Installed</span>
+        </div>
+      </div>
+      <div class="install-summary">
+        <div class="install-summary-text"><strong>Seven systems. One install. One advisor. One platform.</strong></div>
+        <a class="btn btn-primary" href="#final-cta">Start Your Install</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ S13 — SEVEN INSTALLED SYSTEMS BENTO ============ -->
+<section id="systems" class="section-raised" aria-label="The seven installed systems">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Seven systems. One install. One advisor. One platform.</span>
+      <h2 class="h2">The seven systems Bankable installs for your business.</h2>
+      <p class="lede">Instead of assembling a bookkeeper, a tax preparer, a marketing agency, a business coach, and whoever called you about funding last week &mdash; Bankable installs all seven coordinated systems through one advisor relationship and one platform price.</p>
+    </div>
+    <div class="pillar-bento">
+      <a class="pillar-tile t1" href="#pillar-capital-readiness">
+        <div class="pillar-icon-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14 14 0 0 0 0 20"/><path d="M12 2a14 14 0 0 1 0 20"/></svg></div>
+        <span class="install-stamp">System 01 &middot; Installed</span>
+        <span class="pillar-eyebrow">The Capital Readiness System</span>
+        <h3>Ready, not rejected.</h3>
+        <p class="pillar-instead">Instead of guessing what lenders want.</p>
+        <p class="pillar-mech">Bankable installs the diagnostic, the Bankable Score&trade;, and the Capital Growth Plan &mdash; the readiness foundation every other system builds on.</p>
+        <span class="pillar-link">See how it&rsquo;s installed &rarr;</span>
+      </a>
+      <a class="pillar-tile t2" href="#funding-system">
+        <div class="pillar-icon-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        <span class="install-stamp">System 02 &middot; Installed</span>
+        <span class="pillar-eyebrow">The Multi-Round Funding System</span>
+        <h3>Four funding events. One connected system.</h3>
+        <p class="pillar-instead">Instead of one transactional funding event.</p>
+        <p class="pillar-mech">Bankable installs the system that takes you from Income Event 1 to IE2 to IE3 to Institutional &mdash; not as separate events, but as one system that compounds.</p>
+        <span class="pillar-link">See the funding system &rarr;</span>
+      </a>
+      <a class="pillar-tile t3" href="#pillar-marketing">
+        <div class="pillar-icon-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg></div>
+        <span class="install-stamp">System 03 &middot; Installed</span>
+        <span class="pillar-eyebrow">The Growth Marketing System</span>
+        <h3>We install. You operate. You own it.</h3>
+        <p class="pillar-instead">Instead of paying retainer forever.</p>
+        <span class="pillar-link">See the install &rarr;</span>
+      </a>
+      <a class="pillar-tile t4" href="#pillar-financial">
+        <div class="pillar-icon-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
+        <span class="install-stamp">System 04 &middot; Installed</span>
+        <span class="pillar-eyebrow">The Financial Operating System</span>
+        <h3>Cash flow you can predict.</h3>
+        <p class="pillar-instead">Instead of asking your bookkeeper for strategy.</p>
+        <span class="pillar-link">See the FinOps install &rarr;</span>
+      </a>
+      <a class="pillar-tile t5" href="#pillar-tax">
+        <div class="pillar-icon-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01M16 18h.01"/></svg></div>
+        <span class="install-stamp">System 05 &middot; Flagship</span>
+        <span class="pillar-eyebrow">The Bankable Tax System</span>
+        <h3>Year-round tax, not March scrambling.</h3>
+        <p class="pillar-instead">Research. Planning. Filing. Defense. IRS monitoring.</p>
+        <span class="pillar-link">See the tax system &rarr;</span>
+      </a>
+      <a class="pillar-tile t6" href="#pillar-academy">
+        <div class="pillar-icon-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+        <span class="install-stamp">System 06 &middot; Installed</span>
+        <span class="pillar-eyebrow">The Bankable Academy System</span>
+        <h3>The platform is the expert. The Academy makes you one too.</h3>
+        <p class="pillar-instead">Curriculum + ongoing business education.</p>
+        <p class="pillar-mech">Stage-based learning, the 1% Community, peer pairing, accountability rhythm. The advisor track lives here too.</p>
+        <span class="pillar-link">See the Academy &rarr;</span>
+      </a>
+      <a class="pillar-tile t7" href="#pillar-exit">
+        <div class="pillar-icon-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg></div>
+        <span class="install-stamp">System 07 &middot; Installed</span>
+        <span class="pillar-eyebrow">The Exit Readiness System</span>
+        <h3>Know what it&rsquo;s worth &mdash; before you decide what&rsquo;s next.</h3>
+        <p class="pillar-instead">Valuation, asking-price, buyer-readiness.</p>
+        <p class="pillar-mech">Decision-supporting valuation today, certified-partner routing the day you decide to sell, recap, or succession.</p>
+        <span class="pillar-link">See Exit Readiness &rarr;</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ S14 — MULTI-ROUND FUNDING SYSTEM SHOWCASE ============ -->
+<section id="funding-system" class="funding-showcase" aria-label="The Multi-Round Funding System">
+  <div class="container">
+    <div class="funding-head">
+      <span class="eyebrow on-dark" style="justify-content: center;">Showcase &middot; System 02</span>
+      <h2 class="h2">The Multi-Round Funding System</h2>
+      <p class="lede" style="margin-left: auto; margin-right: auto;">Most platforms get you one funding event. We install the system that gets you four &mdash; from your first non-bank dollar through to institutional capital. Not separate events. One connected system that compounds.</p>
+    </div>
+    <div class="funding-system-card">
+      <div class="funding-timeline" id="fundingTimeline">
+        <div class="funding-timeline-line"></div>
+        <div class="funding-events">
+          <div class="funding-event">
+            <div class="funding-event-num">1</div>
+            <div class="funding-event-stage">Income Event 1</div>
+            <div class="funding-event-name">First Capital</div>
+            <div class="funding-event-amount tab-nums" data-target="50">$0</div>
+            <div class="funding-event-eta">Month 1&ndash;2 &middot; illustrative</div>
+            <div class="funding-event-install"><strong>What gets installed:</strong> Pre-qualification, initial non-bankable capital, banking + entity hardening, first reporting accounts.</div>
+          </div>
+          <div class="funding-event">
+            <div class="funding-event-num">2</div>
+            <div class="funding-event-stage">Income Event 2</div>
+            <div class="funding-event-name">Bankable Position</div>
+            <div class="funding-event-amount tab-nums" data-target="150">$0</div>
+            <div class="funding-event-eta">Month 3&ndash;6 &middot; illustrative</div>
+            <div class="funding-event-install"><strong>What gets installed:</strong> Profile depth, debt-service ratios, business credit reporting strength, banker-grade financials.</div>
+          </div>
+          <div class="funding-event">
+            <div class="funding-event-num">3</div>
+            <div class="funding-event-stage">Income Event 3</div>
+            <div class="funding-event-name">Bank-Approved</div>
+            <div class="funding-event-amount tab-nums" data-target="500">$0</div>
+            <div class="funding-event-eta">Month 6&ndash;12 &middot; illustrative</div>
+            <div class="funding-event-install"><strong>What gets installed:</strong> Bank-grade lender placement, real LOC or term loan at prime-plus rates, full document concierge.</div>
+          </div>
+          <div class="funding-event">
+            <div class="funding-event-num">4</div>
+            <div class="funding-event-stage">Institutional</div>
+            <div class="funding-event-name">SBA-Grade Capital</div>
+            <div class="funding-event-amount tab-nums" data-target="2000">$0</div>
+            <div class="funding-event-eta">Month 12&ndash;24 &middot; illustrative</div>
+            <div class="funding-event-install"><strong>What gets installed:</strong> SBA 7(a) eligibility, longer terms, asset-based products, partnership with our licensed clearinghouse.</div>
+          </div>
+        </div>
+      </div>
+      <p class="funding-illustrative">Dollar figures are illustrative pre-launch ranges, not promises. Actual amounts, rates, and timelines vary by business, profile, lender, and underwriting. Lending decisions are made solely by independent lenders.</p>
+      <div class="funding-cta-row">
+        <a class="btn btn-primary btn-lg btn-arrow" href="#final-cta">See where you stand</a>
+        <a class="btn btn-secondary btn-lg" href="#systems">Explore all seven systems</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ S15 — LIVE PRODUCT UI SCREENSHOTS (Instead pattern) ============ -->
+<section class="product-band" aria-label="Live product UI">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">What you&rsquo;ll actually use</span>
+      <h2 class="h2">The platform, in screenshots.</h2>
+      <p class="lede">Real UI. Real workflows. Real screens you and your advisor work in together.</p>
+    </div>
+    <div class="product-grid">
+      <div class="product-card">
+        <div class="product-card-head"><h4>Bankable IQ scan</h4><span class="release-tag live">Live</span></div>
+        <div class="product-screenshot">
+          <svg viewBox="0 0 320 200" preserveAspectRatio="xMidYMid meet">
+            <defs><linearGradient id="ps1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2d388a"/><stop offset="1" stop-color="#00aeef"/></linearGradient></defs>
+            <rect x="14" y="14" width="292" height="172" rx="10" fill="#fff" stroke="#E2E8F0"/>
+            <rect x="14" y="14" width="292" height="4" fill="url(#ps1)"/>
+            <text x="28" y="44" font-family="Inter" font-size="9" font-weight="700" fill="#64748B">QUESTION 12 OF 47</text>
+            <text x="28" y="68" font-family="Inter" font-size="13" font-weight="700" fill="#0F172A">When was your business entity formed?</text>
+            <g font-family="Inter" font-size="10" fill="#0F172A">
+              <rect x="28" y="84" width="264" height="22" rx="6" fill="#F8FAFC" stroke="#E2E8F0"/><text x="40" y="99">Less than 12 months ago</text>
+              <rect x="28" y="112" width="264" height="22" rx="6" fill="#EFF6FF" stroke="#137DC5" stroke-width="1.5"/><text x="40" y="127" font-weight="600">1&ndash;3 years ago</text>
+              <rect x="28" y="140" width="264" height="22" rx="6" fill="#F8FAFC" stroke="#E2E8F0"/><text x="40" y="155">3+ years ago</text>
+            </g>
+            <rect x="28" y="172" width="60" height="6" rx="3" fill="#E2E8F0"/>
+            <rect x="28" y="172" width="22" height="6" rx="3" fill="url(#ps1)"/>
+          </svg>
+        </div>
+        <p>A live scan question with multiple-choice flow. 47 questions, ~12 minutes.</p>
+      </div>
+      <div class="product-card">
+        <div class="product-card-head"><h4>Capital Growth Plan</h4><span class="release-tag live">Live</span></div>
+        <div class="product-screenshot">
+          <svg viewBox="0 0 320 200" preserveAspectRatio="xMidYMid meet">
+            <defs><linearGradient id="ps2" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2d388a"/><stop offset="1" stop-color="#00aeef"/></linearGradient></defs>
+            <rect x="14" y="14" width="292" height="172" rx="10" fill="#fff" stroke="#E2E8F0"/>
+            <g font-family="Inter">
+              <rect x="14" y="14" width="97" height="26" fill="url(#ps2)"/><text x="62" y="32" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">Score</text>
+              <rect x="111" y="14" width="97" height="26" fill="#F8FAFC" stroke="#E2E8F0"/><text x="160" y="32" text-anchor="middle" font-size="11" font-weight="600" fill="#475569">Stage</text>
+              <rect x="208" y="14" width="98" height="26" fill="#F8FAFC" stroke="#E2E8F0"/><text x="257" y="32" text-anchor="middle" font-size="11" font-weight="600" fill="#475569">Pathway</text>
+              <text x="28" y="76" font-size="32" font-weight="800" fill="#0F172A" font-variant-numeric="tabular-nums">62</text>
+              <text x="74" y="76" font-size="11" fill="#64748B">/ 100</text>
+              <text x="28" y="96" font-size="10" font-weight="600" fill="#137DC5">STAGE 2 &middot; STABILIZATION</text>
+              <rect x="28" y="108" width="264" height="8" rx="4" fill="#F1F5F9"/>
+              <rect x="28" y="108" width="164" height="8" rx="4" fill="url(#ps2)"/>
+              <text x="28" y="138" font-size="10" font-weight="700" fill="#0F172A">Next moves (priority order):</text>
+              <text x="28" y="154" font-size="10" fill="#475569">1. Reduce revolving balances to &lt;30%</text>
+              <text x="28" y="168" font-size="10" fill="#475569">2. Establish 3 new business reporting accounts</text>
+              <text x="28" y="182" font-size="10" fill="#475569">3. File 2025 tax return with bankable presentation</text>
+            </g>
+          </svg>
+        </div>
+        <p>A 3-tab preview: Score, Stage, Pathway. Delivered as a real PDF in 24 hours.</p>
+      </div>
+      <div class="product-card">
+        <div class="product-card-head"><h4>Bankable Score&trade; dimensions</h4><span class="release-tag live">Live</span></div>
+        <div class="product-screenshot">
+          <svg viewBox="0 0 320 200" preserveAspectRatio="xMidYMid meet">
+            <defs><linearGradient id="ps3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2d388a"/><stop offset="1" stop-color="#00aeef"/></linearGradient></defs>
+            <rect x="14" y="14" width="292" height="172" rx="10" fill="#fff" stroke="#E2E8F0"/>
+            <g transform="translate(110,100)">
+              <polygon points="0,-60 52,-30 52,30 0,60 -52,30 -52,-30" fill="#F1F5F9" stroke="#E2E8F0"/>
+              <polygon points="0,-46 40,-23 38,22 0,42 -40,23 -38,-22" fill="url(#ps3)" fill-opacity="0.35" stroke="url(#ps3)" stroke-width="1.5"/>
+              <g fill="#137DC5"><circle cx="0" cy="-46" r="3"/><circle cx="40" cy="-23" r="3"/><circle cx="38" cy="22" r="3"/><circle cx="0" cy="42" r="3"/><circle cx="-40" cy="23" r="3"/><circle cx="-38" cy="-22" r="3"/></g>
+              <g font-family="Inter" font-size="8" fill="#64748B" text-anchor="middle">
+                <text x="0" y="-66">Credit</text><text x="62" y="-30">Cash flow</text><text x="62" y="38">Compliance</text><text x="0" y="74">Banking</text><text x="-62" y="38">Reporting</text><text x="-62" y="-30">Stability</text>
+              </g>
+            </g>
+            <g font-family="Inter" font-size="10" fill="#0F172A">
+              <text x="190" y="48" font-weight="700">Dimension breakdown</text>
+              <text x="190" y="68" fill="#475569">Credit &middot; <tspan font-weight="700" fill="#0F172A">68</tspan></text>
+              <text x="190" y="84" fill="#475569">Cash flow &middot; <tspan font-weight="700" fill="#0F172A">71</tspan></text>
+              <text x="190" y="100" fill="#475569">Compliance &middot; <tspan font-weight="700" fill="#0F172A">54</tspan></text>
+              <text x="190" y="116" fill="#475569">Banking &middot; <tspan font-weight="700" fill="#0F172A">60</tspan></text>
+              <text x="190" y="132" fill="#475569">Reporting &middot; <tspan font-weight="700" fill="#0F172A">58</tspan></text>
+              <text x="190" y="148" fill="#475569">Stability &middot; <tspan font-weight="700" fill="#0F172A">63</tspan></text>
+            </g>
+          </svg>
+        </div>
+        <p>The six dimensions lenders silently evaluate. Radial chart on your dashboard.</p>
+      </div>
+      <div class="product-card">
+        <div class="product-card-head"><h4>Multi-Round Funding timeline</h4><span class="release-tag soon">Coming soon</span></div>
+        <div class="product-screenshot">
+          <svg viewBox="0 0 320 200" preserveAspectRatio="xMidYMid meet">
+            <defs><linearGradient id="ps4" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2d388a"/><stop offset="1" stop-color="#00aeef"/></linearGradient></defs>
+            <rect x="14" y="14" width="292" height="172" rx="10" fill="#fff" stroke="#E2E8F0"/>
+            <line x1="40" y1="120" x2="290" y2="120" stroke="url(#ps4)" stroke-width="3"/>
+            <g font-family="Inter">
+              <circle cx="60" cy="120" r="14" fill="url(#ps4)"/><text x="60" y="124" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">IE1</text>
+              <text x="60" y="148" text-anchor="middle" font-size="9" fill="#0F172A" font-weight="700">$50k</text>
+              <text x="60" y="160" text-anchor="middle" font-size="8" fill="#15803D" font-weight="600">FUNDED</text>
+              <circle cx="135" cy="120" r="14" fill="url(#ps4)"/><text x="135" y="124" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">IE2</text>
+              <text x="135" y="148" text-anchor="middle" font-size="9" fill="#0F172A" font-weight="700">$150k</text>
+              <text x="135" y="160" text-anchor="middle" font-size="8" fill="#B45309" font-weight="600">IN PROGRESS</text>
+              <circle cx="210" cy="120" r="14" fill="#fff" stroke="url(#ps4)" stroke-width="2"/><text x="210" y="124" text-anchor="middle" font-size="10" font-weight="700" fill="#137DC5">IE3</text>
+              <text x="210" y="148" text-anchor="middle" font-size="9" fill="#0F172A" font-weight="700">$500k</text>
+              <text x="210" y="160" text-anchor="middle" font-size="8" fill="#64748B">Q3 2026</text>
+              <circle cx="280" cy="120" r="14" fill="#fff" stroke="url(#ps4)" stroke-width="2"/><text x="280" y="124" text-anchor="middle" font-size="9" font-weight="700" fill="#137DC5">SBA</text>
+              <text x="280" y="148" text-anchor="middle" font-size="9" fill="#0F172A" font-weight="700">$2M</text>
+              <text x="280" y="160" text-anchor="middle" font-size="8" fill="#64748B">2027</text>
+              <text x="160" y="42" text-anchor="middle" font-size="11" font-weight="700" fill="#0F172A">Your funding timeline</text>
+            </g>
+          </svg>
+        </div>
+        <p>The system, in dashboard form. Status, dates, amounts (illustrative).</p>
+      </div>
+      <div class="product-card">
+        <div class="product-card-head"><h4>Bankable Tax dashboard</h4><span class="release-tag soon">Powered by Instead</span></div>
+        <div class="product-screenshot">
+          <svg viewBox="0 0 320 200" preserveAspectRatio="xMidYMid meet">
+            <defs><linearGradient id="ps5" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2d388a"/><stop offset="1" stop-color="#00aeef"/></linearGradient></defs>
+            <rect x="14" y="14" width="292" height="172" rx="10" fill="#fff" stroke="#E2E8F0"/>
+            <rect x="14" y="14" width="292" height="4" fill="url(#ps5)"/>
+            <g font-family="Inter" font-size="10" fill="#0F172A">
+              <text x="28" y="40" font-weight="700">Bankable Tax &middot; year-round</text>
+              <text x="28" y="68" fill="#475569">Q1 estimate filed</text><rect x="244" y="58" width="48" height="14" rx="3" fill="#15803D"/><text x="268" y="68" text-anchor="middle" font-size="8" fill="#fff" font-weight="700">PAID</text>
+              <text x="28" y="92" fill="#475569">Q2 mid-year review</text><rect x="244" y="82" width="48" height="14" rx="3" fill="#15803D"/><text x="268" y="92" text-anchor="middle" font-size="8" fill="#fff" font-weight="700">DONE</text>
+              <text x="28" y="116" fill="#475569">Q3 planning session</text><rect x="244" y="106" width="48" height="14" rx="3" fill="#B45309"/><text x="268" y="116" text-anchor="middle" font-size="8" fill="#fff" font-weight="700">SCHED</text>
+              <text x="28" y="140" fill="#475569">2026 return prep</text><rect x="244" y="130" width="48" height="14" rx="3" fill="url(#ps5)"/><text x="268" y="140" text-anchor="middle" font-size="8" fill="#fff" font-weight="700">PREP</text>
+              <text x="28" y="166" font-weight="700" fill="#137DC5">IRS monitor: 0 notices</text>
+            </g>
+          </svg>
+        </div>
+        <p>Q1&ndash;Q4 estimates, returns prepared, IRS monitoring alerts. Year-round, not March.</p>
+      </div>
+      <div class="product-card">
+        <div class="product-card-head"><h4>Advisor portal</h4><span class="release-tag soon">Coming soon</span></div>
+        <div class="product-screenshot">
+          <svg viewBox="0 0 320 200" preserveAspectRatio="xMidYMid meet">
+            <defs><linearGradient id="ps6" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2d388a"/><stop offset="1" stop-color="#00aeef"/></linearGradient></defs>
+            <rect x="14" y="14" width="292" height="172" rx="10" fill="#fff" stroke="#E2E8F0"/>
+            <g font-family="Inter" font-size="10">
+              <text x="28" y="36" font-weight="700" fill="#0F172A">Your client roster</text>
+              <text x="208" y="36" font-weight="700" fill="#137DC5">MRR $4,275</text>
+              <g><rect x="28" y="48" width="264" height="22" rx="4" fill="#F8FAFC" stroke="#E2E8F0"/><text x="36" y="63" fill="#0F172A" font-weight="600">Acme LLC</text><text x="180" y="63" fill="#15803D">Score 71</text><text x="232" y="63" fill="#64748B">IE2 in progress</text></g>
+              <g><rect x="28" y="74" width="264" height="22" rx="4" fill="#F8FAFC" stroke="#E2E8F0"/><text x="36" y="89" fill="#0F172A" font-weight="600">Beta Construction</text><text x="180" y="89" fill="#B45309">Score 54</text><text x="232" y="89" fill="#64748B">Plan delivered</text></g>
+              <g><rect x="28" y="100" width="264" height="22" rx="4" fill="#F8FAFC" stroke="#E2E8F0"/><text x="36" y="115" fill="#0F172A" font-weight="600">Gamma E-commerce</text><text x="180" y="115" fill="#15803D">Score 78</text><text x="232" y="115" fill="#64748B">IE3 approved</text></g>
+              <g><rect x="28" y="126" width="264" height="22" rx="4" fill="#F8FAFC" stroke="#E2E8F0"/><text x="36" y="141" fill="#0F172A" font-weight="600">Delta Services</text><text x="180" y="141" fill="#B91C1C">Score 39</text><text x="232" y="141" fill="#64748B">Stabilizing</text></g>
+              <g><rect x="28" y="152" width="264" height="22" rx="4" fill="url(#ps6)" opacity="0.12"/><text x="36" y="167" fill="#0F172A" font-weight="600">+ Add client</text></g>
+            </g>
+          </svg>
+        </div>
+        <p>Client roster, scores, revenue, install status. Ships with the CCRA cohort.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ S16 — COST OF INACTION ============ -->
+<section aria-label="The cost of inaction">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">The price of doing nothing</span>
+      <h2 class="h2">Every month you stay in the gap, you pay for it twice.</h2>
+      <p class="lede">The hidden tax of running a sub-bankable business compounds quietly &mdash; you pay more for capital, you pay more for the vendor stack, and you never reach the position that unlocks the kind of growth capital the top 1% use.</p>
+    </div>
+    <div class="cost-grid">
+      <div class="cost-card">
+        <svg class="cost-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        <h3>Keep paying non-bank rates.</h3>
+        <p>You pay merchant-cash-advance and credit-card rates for capital you could be qualifying for at a bank. The monthly cost of staying sub-bankable is real money &mdash; every month.</p>
+        <p class="citation">Per Federal Reserve SBCS rate-tier observations.</p>
+      </div>
+      <div class="cost-card">
+        <svg class="cost-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        <h3>Keep assembling five vendors.</h3>
+        <p>Five separate retainers. Five separate handoffs. Five separate stories to re-tell every time something goes wrong. None of them can see the whole picture.</p>
+        <p class="citation">Five-vendor pattern documented in BANKABLE-OPERATING-MODEL.md.</p>
+      </div>
+      <div class="cost-card">
+        <svg class="cost-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 17H2a3 3 0 0 0 3-3V9a7 7 0 0 1 14 0v5a3 3 0 0 0 3 3z"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+        <h3>Keep never reaching bankable position.</h3>
+        <p>You don&rsquo;t get access to institutional rates, longer terms, SBA-grade products &mdash; the kind of capital the top 1% of small businesses use to compound. Year after year, the gap widens.</p>
+        <p class="citation">Per SBA 7(a) program eligibility framework.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ S17 — SUCCESS SCENE ============ -->
+<section class="section-raised" aria-label="Success scene">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">What it looks like when you are bankable</span>
+      <h2 class="h2">The morning your banker calls you back.</h2>
+      <p class="lede">Capital approved at institutional rates. One advisor coordinating your seven installed systems. A growth plan that compounds month after month.</p>
+    </div>
+    <p class="composite-banner">The stories below are composite illustrations based on the experience of multiple Bankable IQ users. Individual results vary.</p>
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <div class="testimonial-stat"><span class="gradient-text">Prime + 2</span></div>
+        <p class="testimonial-quote">&ldquo;I&rsquo;d been told no by four banks. My advisor walked me through the Capital Growth Plan, we worked the priority list for five months, and the same bank that had told me no the first time approved a line of credit at prime-plus-two. Same business. Same owner. Different presentation.&rdquo;</p>
+        <div class="testimonial-meta">
+          <div class="testimonial-avatar">CS</div>
+          <div class="testimonial-attr"><div class="name">Construction subcontractor</div><div class="biz">Texas &middot; composite</div></div>
+        </div>
+        <p class="testimonial-disclaimer">Composite illustration based on the experience of multiple Bankable IQ users. Individual results vary.</p>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stat"><span class="gradient-text">From chaos to operating.</span></div>
+        <p class="testimonial-quote">&ldquo;Four vendors. Four invoices. Four logins. Bankable replaced them with one advisor and seven installed systems. My cash flow is predictable. My tax plan runs year-round. My funnel runs on autopilot. I went from chaos to operating.&rdquo;</p>
+        <div class="testimonial-meta">
+          <div class="testimonial-avatar">EF</div>
+          <div class="testimonial-attr"><div class="name">E-commerce founder</div><div class="biz">Georgia &middot; composite</div></div>
+        </div>
+        <p class="testimonial-disclaimer">Composite illustration based on the experience of multiple Bankable IQ users. Individual results vary.</p>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stat"><span class="gradient-text">+28%</span></div>
+        <p class="testimonial-quote">&ldquo;I didn&rsquo;t know what my business was worth. My advisor installed the Exit Readiness System, delivered the Tier A valuation, gave me the decision framework, and when I was ready we routed through the certified partner network. I sold for 28% more than my first quoted offer.&rdquo;</p>
+        <div class="testimonial-meta">
+          <div class="testimonial-avatar">SB</div>
+          <div class="testimonial-attr"><div class="name">Service business owner</div><div class="biz">Florida &middot; composite</div></div>
+        </div>
+        <p class="testimonial-disclaimer">Composite illustration based on the experience of multiple Bankable IQ users. Individual results vary.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ S18 — DEEP SYSTEM DIVES ============ -->
+<section aria-label="System deep dives">
+  <div class="container">
+
+    <article class="deep-pillar" id="pillar-capital-readiness">
+      <div class="deep-pillar-grid">
+        <div>
+          <span class="pillar-eyebrow">System 01 &middot; The Capital Readiness System</span>
+          <h3>Ready, not rejected.</h3>
+          <p>We install the diagnostic that names where you stand, the score that tracks where you&rsquo;re going, and the plan that tells you what to fix next. The Bankable IQ scan is the entry point for every business owner who works with us.</p>
+          <ul>
+            <li>47-question diagnostic that mirrors what lenders evaluate</li>
+            <li>Bankable Score&trade; (0&ndash;100) with estimate disclosure</li>
+            <li>Capital Growth Plan PDF delivered in 24 hours</li>
+            <li>Six Bankable Stages&trade; placement + five Capital Pathways&trade;</li>
+          </ul>
+        </div>
+        <div class="deep-pillar-visual">
+          <svg viewBox="0 0 320 240" width="80%" aria-hidden="true">
+            <defs><linearGradient id="dpg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2d388a"/><stop offset="1" stop-color="#00aeef"/></linearGradient></defs>
+            <rect x="20" y="20" width="280" height="200" rx="14" fill="#fff" stroke="#E2E8F0"/>
+            <rect x="20" y="20" width="280" height="4" fill="url(#dpg1)"/>
+            <circle cx="100" cy="120" r="50" fill="none" stroke="#F1F5F9" stroke-width="10"/>
+            <path d="M 100 70 A 50 50 0 1 1 60 145" fill="none" stroke="url(#dpg1)" stroke-width="10" stroke-linecap="round"/>
+            <text x="100" y="126" text-anchor="middle" font-family="Inter" font-weight="700" font-size="28" fill="#0F172A">68</text>
+            <rect x="170" y="80" width="110" height="10" rx="5" fill="#F1F5F9"/><rect x="170" y="80" width="78" height="10" rx="5" fill="url(#dpg1)"/>
+            <rect x="170" y="105" width="110" height="10" rx="5" fill="#F1F5F9"/><rect x="170" y="105" width="92" height="10" rx="5" fill="url(#dpg1)"/>
+            <rect x="170" y="130" width="110" height="10" rx="5" fill="#F1F5F9"/><rect x="170" y="130" width="54" height="10" rx="5" fill="url(#dpg1)"/>
+            <rect x="170" y="155" width="110" height="10" rx="5" fill="#F1F5F9"/><rect x="170" y="155" width="84" height="10" rx="5" fill="url(#dpg1)"/>
+          </svg>
+        </div>
+      </div>
+    </article>
+
+    <article class="deep-pillar" id="pillar-marketing">
+      <div class="deep-pillar-grid">
+        <div>
+          <span class="pillar-eyebrow">System 03 &middot; The Growth Marketing System</span>
+          <h3>We install. You operate. You own it.</h3>
+          <p>One-time install of the funnel, ads, and CRM infrastructure that converts attention into pipeline &mdash; then you keep the keys. No forever retainer. No agency you can&rsquo;t fire.</p>
+          <ul>
+            <li>Funnel + landing-page system</li>
+            <li>Ad-account setup + first-90-day campaigns</li>
+            <li>CRM + automation install (GHL or your stack)</li>
+            <li>Handoff documentation + your advisor as the strategy layer</li>
+          </ul>
+        </div>
+        <div class="deep-pillar-visual">
+          <svg viewBox="0 0 320 240" width="80%" aria-hidden="true">
+            <defs><linearGradient id="dpg3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2d388a"/><stop offset="1" stop-color="#00aeef"/></linearGradient></defs>
+            <path d="M 40 40 L 280 40 L 240 90 L 80 90 Z" fill="url(#dpg3)" opacity="0.85"/>
+            <path d="M 80 100 L 240 100 L 210 150 L 110 150 Z" fill="url(#dpg3)" opacity="0.6"/>
+            <path d="M 110 160 L 210 160 L 185 210 L 135 210 Z" fill="url(#dpg3)"/>
+            <text x="160" y="70" text-anchor="middle" fill="#fff" font-family="Inter" font-size="11" font-weight="600">Attention</text>
+            <text x="160" y="130" text-anchor="middle" fill="#fff" font-family="Inter" font-size="11" font-weight="600">Pipeline</text>
+            <text x="160" y="190" text-anchor="middle" fill="#fff" font-family="Inter" font-size="11" font-weight="600">Revenue</text>
+          </svg>
+        </div>
+      </div>
+    </article>
+
+    <article class="deep-pillar" id="pillar-financial">
+      <div class="deep-pillar-grid">
+        <div class="deep-pillar-visual">
+          <svg viewBox="0 0 320 240" width="80%" aria-hidden="true">
+            <defs><linearGradient id="dpg4" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2d388a"/><stop offset="1" stop-color="#00aeef"/></linearGradient></defs>
+            <polyline points="20,180 70,140 120,150 170,90 220,110 270,60 300,80" fill="none" stroke="url(#dpg4)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <g fill="#137DC5"><circle cx="20" cy="180" r="4"/><circle cx="70" cy="140" r="4"/><circle cx="120" cy="150" r="4"/><circle cx="170" cy="90" r="4"/><circle cx="220" cy="110" r="4"/><circle cx="270" cy="60" r="4"/></g>
+            <text x="20" y="220" font-family="Inter" font-size="10" fill="#64748B">Q1</text>
+            <text x="270" y="220" font-family="Inter" font-size="10" fill="#64748B">Q4</text>
+          </svg>
+        </div>
+        <div>
+          <span class="pillar-eyebrow">System 04 &middot; The Financial Operating System</span>
+          <h3>Cash flow you can predict. Decisions you can defend.</h3>
+          <p>Advisor-delivered cash-flow strategy, dashboard install, and the decision frameworks (Profit First, cash-conversion cycle, runway-and-reserves) that mean you stop guessing and start operating.</p>
+          <ul>
+            <li>13-week rolling cash forecast</li>
+            <li>KPI dashboard (revenue, margin, runway, AR/AP days)</li>
+            <li>Profit-allocation system</li>
+            <li>Your advisor as the strategy layer above your bookkeeper</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <article class="deep-pillar flag" id="pillar-tax">
+      <div class="deep-pillar-grid">
+        <div>
+          <span class="pillar-flag">Flagship system</span>
+          <span class="pillar-eyebrow">System 05 &middot; The Bankable Tax System</span>
+          <h3>Year-round tax, not once-a-year scrambling.</h3>
+          <p>The Service Bureau model: Bankable&rsquo;s EFIN, professional tax software hosted free for your advisor, your advisor as the PTIN&rsquo;d preparer of record, and the year-round operating cadence that means tax never surprises you again. Research. Planning. Filing. Defense. IRS monitoring.</p>
+          <ul>
+            <li>Prep + filing under Bankable&rsquo;s EFIN</li>
+            <li>Year-round IRS monitoring + notices handled</li>
+            <li>Entity election strategy + S-corp optimization where appropriate</li>
+            <li>Coordinated with your Capital Growth Plan so tax never blocks capital</li>
+          </ul>
+        </div>
+        <div class="deep-pillar-visual">
+          <svg viewBox="0 0 320 240" width="80%" aria-hidden="true">
+            <defs><linearGradient id="dpg5" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2d388a"/><stop offset="1" stop-color="#00aeef"/></linearGradient></defs>
+            <rect x="40" y="40" width="240" height="160" rx="12" fill="#fff" stroke="#E2E8F0"/>
+            <rect x="40" y="40" width="240" height="4" fill="url(#dpg5)"/>
+            <g font-family="Inter" font-size="11" fill="#0F172A">
+              <text x="60" y="78" font-weight="600">Q1 &middot; Estimated payment</text><rect x="240" y="68" width="20" height="14" rx="3" fill="#15803D"/>
+              <text x="60" y="108" font-weight="600">Q2 &middot; Mid-year review</text><rect x="240" y="98" width="20" height="14" rx="3" fill="#15803D"/>
+              <text x="60" y="138" font-weight="600">Q3 &middot; Planning</text><rect x="240" y="128" width="20" height="14" rx="3" fill="#15803D"/>
+              <text x="60" y="168" font-weight="600">Q4 &middot; Filing prep</text><rect x="240" y="158" width="20" height="14" rx="3" fill="url(#dpg5)"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </article>
+
+    <article class="deep-pillar" id="pillar-academy">
+      <div class="deep-pillar-grid">
+        <div class="deep-pillar-visual">
+          <svg viewBox="0 0 320 240" width="80%" aria-hidden="true">
+            <defs><linearGradient id="dpg6" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2d388a"/><stop offset="1" stop-color="#00aeef"/></linearGradient></defs>
+            <g>
+              <rect x="40" y="50" width="240" height="40" rx="8" fill="#F8FAFC" stroke="#E2E8F0"/><rect x="40" y="50" width="240" height="40" rx="8" fill="url(#dpg6)" opacity="0.15"/><text x="60" y="76" font-family="Inter" font-size="13" font-weight="600" fill="#0F172A">Foundation &middot; Stage 1</text>
+              <rect x="40" y="100" width="240" height="40" rx="8" fill="#F8FAFC" stroke="#E2E8F0"/><text x="60" y="126" font-family="Inter" font-size="13" font-weight="600" fill="#0F172A">Stabilization &middot; Stage 2</text>
+              <rect x="40" y="150" width="240" height="40" rx="8" fill="#F8FAFC" stroke="#E2E8F0"/><text x="60" y="176" font-family="Inter" font-size="13" font-weight="600" fill="#0F172A">Activation &middot; Stage 3</text>
+            </g>
+          </svg>
+        </div>
+        <div>
+          <span class="pillar-eyebrow">System 06 &middot; The Bankable Academy System</span>
+          <h3>The platform is the expert. The Academy makes you one too.</h3>
+          <p>Stage-segmented learning paths for business owners + the full CCRA certification track for advisors. Calm, plain-English, no-hype curriculum that meets you where you are.</p>
+          <ul>
+            <li>Stage-based learning by Bankable Stage (1&ndash;6)</li>
+            <li>The 1% Community &mdash; live calendar, Deal Thursday, Office Hours</li>
+            <li>Capital Readiness Advisor track (CCRA)</li>
+            <li>Peer pairing + accountability rhythm</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <article class="deep-pillar" id="pillar-exit">
+      <div class="deep-pillar-grid">
+        <div>
+          <span class="pillar-eyebrow">System 07 &middot; The Exit Readiness System</span>
+          <h3>Know what it&rsquo;s worth &mdash; before you decide what&rsquo;s next.</h3>
+          <p>Decision-supporting valuation today, certified-partner routing the day you decide to sell, recap, or pass the business to family. You don&rsquo;t accept the first offer. You see the full picture first.</p>
+          <ul>
+            <li>Tier A &mdash; decision-supporting valuation in 2 weeks</li>
+            <li>Tier B &mdash; certified valuation through SBA-defensible partner network</li>
+            <li>Buyer-readiness assessment + asking-price determination</li>
+            <li>Succession + family-transfer planning frameworks</li>
+          </ul>
+        </div>
+        <div class="deep-pillar-visual">
+          <svg viewBox="0 0 320 240" width="80%" aria-hidden="true">
+            <defs><linearGradient id="dpg7" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2d388a"/><stop offset="1" stop-color="#00aeef"/></linearGradient></defs>
+            <rect x="40" y="60" width="100" height="140" rx="10" fill="#fff" stroke="#E2E8F0"/><rect x="40" y="60" width="100" height="4" fill="url(#dpg7)"/>
+            <text x="90" y="100" text-anchor="middle" font-family="Inter" font-size="11" font-weight="600" fill="#64748B">First offer</text>
+            <text x="90" y="160" text-anchor="middle" font-family="Inter" font-size="28" font-weight="800" fill="#0F172A">$1.4M</text>
+            <rect x="180" y="40" width="100" height="160" rx="10" fill="url(#dpg7)"/>
+            <text x="230" y="80" text-anchor="middle" font-family="Inter" font-size="11" font-weight="600" fill="rgba(255,255,255,0.85)">Bankable valuation</text>
+            <text x="230" y="150" text-anchor="middle" font-family="Inter" font-size="32" font-weight="800" fill="#fff">$1.8M</text>
+          </svg>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============ S19 — NATIONWIDE COVERAGE (Instead pattern) ============ -->
+<section class="nationwide-band" aria-label="Nationwide coverage">
+  <div class="container">
+    <div class="nationwide-grid">
+      <div>
+        <span class="eyebrow">Nationwide</span>
+        <h2 class="h2">Available in all 50 states. One national community.</h2>
+        <p class="lede">Bankable&rsquo;s advisor + lender network operates coast to coast. The platform is the same wherever you are. Your Certified Capital Readiness Advisor finds you the lender placement that fits &mdash; not the one that happens to be local.</p>
+        <div class="nationwide-legend">
+          <div class="legend-item"><span class="legend-swatch lit"></span> Advisor + lender coverage</div>
+          <div class="legend-item"><span class="legend-swatch empty"></span> Recruiting now</div>
+        </div>
+        <p class="muted" style="margin-top:16px; font-size: 12.5px;">Bankable is not a lender or broker. Lending placements are handled by independent licensed partners in our clearinghouse network.</p>
+      </div>
+      <div>
+        <div class="nationwide-states" id="nationwideStates">
+          <!-- 50 state cells injected by JS for animation; static fallback below -->
+          <div class="state-cell" data-st="AL">AL</div><div class="state-cell" data-st="AK">AK</div><div class="state-cell" data-st="AZ">AZ</div><div class="state-cell" data-st="AR">AR</div><div class="state-cell" data-st="CA">CA</div><div class="state-cell" data-st="CO">CO</div><div class="state-cell" data-st="CT">CT</div><div class="state-cell" data-st="DE">DE</div><div class="state-cell" data-st="FL">FL</div><div class="state-cell" data-st="GA">GA</div><div class="state-cell" data-st="HI">HI</div>
+          <div class="state-cell" data-st="ID">ID</div><div class="state-cell" data-st="IL">IL</div><div class="state-cell" data-st="IN">IN</div><div class="state-cell" data-st="IA">IA</div><div class="state-cell" data-st="KS">KS</div><div class="state-cell" data-st="KY">KY</div><div class="state-cell" data-st="LA">LA</div><div class="state-cell" data-st="ME">ME</div><div class="state-cell" data-st="MD">MD</div><div class="state-cell" data-st="MA">MA</div><div class="state-cell" data-st="MI">MI</div>
+          <div class="state-cell" data-st="MN">MN</div><div class="state-cell" data-st="MS">MS</div><div class="state-cell" data-st="MO">MO</div><div class="state-cell" data-st="MT">MT</div><div class="state-cell" data-st="NE">NE</div><div class="state-cell" data-st="NV">NV</div><div class="state-cell" data-st="NH">NH</div><div class="state-cell" data-st="NJ">NJ</div><div class="state-cell" data-st="NM">NM</div><div class="state-cell" data-st="NY">NY</div><div class="state-cell" data-st="NC">NC</div>
+          <div class="state-cell" data-st="ND">ND</div><div class="state-cell" data-st="OH">OH</div><div class="state-cell" data-st="OK">OK</div><div class="state-cell" data-st="OR">OR</div><div class="state-cell" data-st="PA">PA</div><div class="state-cell" data-st="RI">RI</div><div class="state-cell" data-st="SC">SC</div><div class="state-cell" data-st="SD">SD</div><div class="state-cell" data-st="TN">TN</div><div class="state-cell" data-st="TX">TX</div><div class="state-cell" data-st="UT">UT</div>
+          <div class="state-cell" data-st="VT">VT</div><div class="state-cell" data-st="VA">VA</div><div class="state-cell" data-st="WA">WA</div><div class="state-cell" data-st="WV">WV</div><div class="state-cell" data-st="WI">WI</div><div class="state-cell" data-st="WY">WY</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ S20 — PRICING (3-tier with feature checklists) ============ -->
+<section id="pricing" class="section-raised" aria-label="Pricing">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Pricing</span>
+      <h2 class="h2">Start at $7. Stay at $97/mo. Or lock the founding rate for $599/year.</h2>
+      <p class="lede">Try the platform for $7 for 7 days. Then continue at the locked Cohort Membership rate. Higher tiers unlock as your practice or business grows.</p>
+    </div>
+    <div class="pricing-toggle-wrap">
+      <div class="pricing-toggle" role="tablist" aria-label="Billing cadence">
+        <button class="active" id="pricingMonthly" role="tab" aria-selected="true">Monthly</button>
+        <button id="pricingAnnual" role="tab" aria-selected="false">Annual &middot; save ~49%</button>
+      </div>
+    </div>
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <div>
+          <div class="pricing-name">7-Day Trial</div>
+          <div class="pricing-price">$7<small>&nbsp;/ 7 days</small></div>
+          <p class="pricing-desc">Open every door. Decide if Bankable is for you with no commitment.</p>
+        </div>
+        <p class="pricing-features-head">What you get</p>
+        <ul>
+          <li>Full platform access for 7 days</li>
+          <li>Run unlimited Bankable IQ scans</li>
+          <li>Sample Capital Growth Plan generation</li>
+          <li>Community + Office Hours preview</li>
+          <li>No credit pull. No bank login. Cancel anytime.</li>
+        </ul>
+        <a class="btn btn-secondary btn-arrow pricing-cta" href="#final-cta">Start the Trial</a>
+      </div>
+      <div class="pricing-card featured">
+        <div class="pricing-badge">Most Popular</div>
+        <div>
+          <div class="pricing-name">Cohort Membership</div>
+          <div class="pricing-price" id="cohortPrice">$97<small>&nbsp;/ month</small></div>
+          <div class="pricing-save-pill" id="cohortSavePill" style="display:none;">Save ~49% with annual</div>
+          <p class="pricing-desc">The Founding Cohort rate. Locked for life of subscription.</p>
+        </div>
+        <p class="pricing-features-head">Everything in trial, plus</p>
+        <ul>
+          <li>CCRA curriculum (advisor track) OR full BO platform</li>
+          <li>Bankable IQ unlimited scans + Capital Growth Plans</li>
+          <li>All seven installed systems</li>
+          <li>1% Community access + weekly live calendar</li>
+          <li>Service Bureau hosted access (advisors)</li>
+          <li>Marketing Asset Library</li>
+        </ul>
+        <a class="btn btn-primary btn-arrow pricing-cta" href="#final-cta">Join the Cohort</a>
+      </div>
+      <div class="pricing-card">
+        <div>
+          <div class="pricing-name">Capital Advisor</div>
+          <div class="pricing-price">$297<small>&nbsp;/ month</small></div>
+          <p class="pricing-desc">For active CCRAs running a real practice. Earned, not bought.</p>
+        </div>
+        <p class="pricing-features-head">Everything in Cohort, plus</p>
+        <ul>
+          <li>Active deal guidance + structuring help</li>
+          <li>Practice-builder tools + lead-share program</li>
+          <li>Priority Deal Thursday case submission</li>
+          <li>Founding-only Office Hours with Kevin</li>
+          <li>Pathway to Capital Hub Leader (invitation-only)</li>
+        </ul>
+        <a class="btn btn-secondary btn-arrow pricing-cta" href="#advisor">See the Path</a>
+      </div>
+    </div>
+    <p class="pricing-foot">All prices in USD. The Founding-Cohort rate ($97/mo, $599/yr) is locked for the life of subscription &mdash; capped at 500 seats. Once filled, standard pricing applies. <span class="release-tag soon" style="margin-left:8px;">Hub Leader tier &middot; invitation only</span></p>
+  </div>
+</section>
+
+<!-- ============ S21 — ADVISOR BAND (ProfitFirst-tier pitch) ============ -->
+<section id="advisor" class="advisor-band" aria-label="The advisor path">
+  <div class="container">
+    <div class="advisor-head">
+      <span class="eyebrow on-dark" style="justify-content: center;">For Capital Readiness Advisors</span>
+      <h2>A credentialed advisory practice &mdash; <span class="gradient-text" style="background: linear-gradient(135deg, #00AEEF 0%, #fff 100%); -webkit-background-clip: text; background-clip: text;">without the MLM, without the CFP, without the state license.</span></h2>
+      <p class="lede" style="margin-left: auto; margin-right: auto;">Become a Certified Capital Readiness Advisor (CCRA). One certification. Seven installed systems delivered to every client. The platform is the expert. You are the relationship.</p>
+    </div>
+
+    <div class="advisor-grid">
+      <div class="stack-card">
+        <h3>$34,985 in value. Your investment: $97/mo or $599/yr.</h3>
+        <div class="stack-list">
+          <div class="stack-row"><span class="stack-num">1</span><div class="stack-item"><strong>CCRA Curriculum</strong> &mdash; 20 modules, 5 phases, 14 hours of structured drip.</div><span class="stack-val">$2,997</span></div>
+          <div class="stack-row"><span class="stack-num">2</span><div class="stack-item"><strong>Bankable IQ unlimited scans</strong> &mdash; own + every client you connect.</div><span class="stack-val">$4,997</span></div>
+          <div class="stack-row"><span class="stack-num">3</span><div class="stack-item"><strong>Bankable Score&trade;</strong> &mdash; as a brand asset for client work.</div><span class="stack-val">$1,997</span></div>
+          <div class="stack-row"><span class="stack-num">4</span><div class="stack-item"><strong>Capital Growth Plan</strong> &mdash; deliverable for every client, white-labeled.</div><span class="stack-val">$3,997</span></div>
+          <div class="stack-row"><span class="stack-num">5</span><div class="stack-item"><strong>Service Bureau</strong> &mdash; Bankable&rsquo;s EFIN + tax software hosted free.</div><span class="stack-val">$2,997</span></div>
+          <div class="stack-row"><span class="stack-num">6</span><div class="stack-item"><strong>DFY Multi-Round Funding fulfillment</strong> &mdash; concierge handles placements.</div><span class="stack-val">$4,997</span></div>
+          <div class="stack-row"><span class="stack-num">7</span><div class="stack-item"><strong>Bankable Advisor Directory</strong> + lead-share program.</div><span class="stack-val">$2,997</span></div>
+          <div class="stack-row"><span class="stack-num">8</span><div class="stack-item"><strong>1% Club community</strong> &mdash; Deal Thursday, Monday training, Office Hours, peers.</div><span class="stack-val">$2,997</span></div>
+          <div class="stack-row"><span class="stack-num">9</span><div class="stack-item"><strong>Compliance perimeter</strong> &mdash; partner network covers regulated edges.</div><span class="stack-val">$1,997</span></div>
+          <div class="stack-row"><span class="stack-num">10</span><div class="stack-item"><strong>Marketing Library</strong> &mdash; 12 assets: funnels, ads, email, social.</div><span class="stack-val">$2,997</span></div>
+          <div class="stack-row"><span class="stack-num">11</span><div class="stack-item"><strong>1% Summit ticket</strong> &mdash; annual in-person Founding Member reunion.</div><span class="stack-val">$1,997</span></div>
+          <div class="stack-row"><span class="stack-num">12</span><div class="stack-item"><strong>Capital Hub Leader upgrade path</strong> &mdash; invitation-only top tier.</div><span class="stack-val">$2,997</span></div>
+        </div>
+        <div class="stack-total">
+          <div class="total-row big"><span>Total stated value</span><span class="v tab-nums">$34,985</span></div>
+          <div class="total-row your"><span>Your investment</span><span class="v">$97/mo &middot; $599/yr</span></div>
+          <div class="total-row"><span>Plus founding-cohort exclusivity &mdash; locked for life of subscription.</span><span></span></div>
+        </div>
+      </div>
+
+      <div>
+        <div class="scarcity-card">
+          <h3>The Founding Cohort</h3>
+          <div class="scarcity-count">
+            <span class="n tab-nums">500</span>
+            <span class="l">seats. Real cap. Enforced.</span>
+          </div>
+          <ul>
+            <li>Application + 15-minute concierge interview required</li>
+            <li>Lifetime $97/mo price lock for life of subscription</li>
+            <li>Permanent founding-cohort badge in the community + directory</li>
+            <li>Founding-only private channel with Kevin&rsquo;s monthly Office Hours</li>
+            <li>Standard cohort opens at higher rate after the 500 fill</li>
+          </ul>
+        </div>
+
+        <div class="avatar-served-card">
+          <h3>Built for four advisor avatars</h3>
+          <div class="avatar-served">
+            <div class="av-row"><span class="av-num">A</span><div><strong>The Mission-Seeking Defector</strong> &mdash; finally a real business with integrity.</div></div>
+            <div class="av-row"><span class="av-num">B</span><div><strong>The Practice Expander</strong> &mdash; add capital, tax, and valuation lines to your existing book.</div></div>
+            <div class="av-row"><span class="av-num">C</span><div><strong>The Career Pivoter</strong> &mdash; your own practice, no licensing barriers, day-1 ready.</div></div>
+            <div class="av-row"><span class="av-num">D</span><div><strong>The Methodology-Adjacent Operator</strong> &mdash; Bankable is the umbrella that holds your other certifications.</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="advisor-cta-row">
+      <a class="btn btn-primary btn-lg btn-arrow" href="#final-cta">Apply to the Founding Cohort</a>
+      <a class="btn btn-secondary btn-lg" href="#pricing">See the curriculum &rarr;</a>
+    </div>
+
+    <div class="advisor-not-block">
+      <strong>What Bankable is not.</strong> Not a lender. Not a broker. Not a credit-repair organization. Not a Multi-Level Marketing company. No downline. No depth comp. No recruiting overrides. Income is tied to client outcomes, not depth.
+    </div>
+  </div>
+</section>
+
+<!-- ============ S22 — FINAL CTA (Instead pattern) ============ -->
+<section id="final-cta" class="final-cta" aria-label="Final call to action">
+  <div class="container">
+    <a class="logo-wrap" href="#top" aria-label="Bankable">
+      <svg aria-hidden="true"><use href="#bnkLogoWhite"/></svg>
+    </a>
+    <span class="eyebrow on-dark">Start the 12-minute scan</span>
+    <h2 class="h2">Ready to find out where you stand?</h2>
+    <p class="lede" style="margin-left:auto; margin-right:auto;">Run your free 12-minute Bankable IQ scan. We&rsquo;ll deliver your Capital Growth Plan in 24 hours and install the seven systems your business actually needs.</p>
+    <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+      <a class="btn btn-primary btn-lg btn-arrow" href="#">Run Your Free Scan</a>
+      <a class="btn btn-secondary btn-lg" href="#advisor">Become a Bankable Advisor</a>
+    </div>
+    <div class="final-cta-trust">
+      <span>No credit card required</span>
+      <span>No credit pull</span>
+      <span>No bank login</span>
+    </div>
+    <p class="ps-line"><strong>P.S.</strong> The 12-minute scan is free, the Capital Growth Plan is free, and there&rsquo;s no credit pull. Whether you&rsquo;re a business owner who&rsquo;s been told no &mdash; or never tried &mdash; or you&rsquo;re a professional who wants to deliver this work to clients &mdash; start with the scan and we&rsquo;ll show you which door fits.</p>
+  </div>
+</section>
+
+<!-- ============ S23 — FOUNDER REPRISE ============ -->
+<section class="reprise" aria-label="Founder reprise">
+  <div class="container">
+    <div class="reprise-grid">
+      <div class="video-placeholder" role="img" aria-label="Founder video placeholder">
+        <button class="play-btn" aria-label="Play founder message">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+        </button>
+      </div>
+      <div>
+        <span class="eyebrow">Hear it from me</span>
+        <h2 class="h2">If you&rsquo;ve been told no &mdash; or you&rsquo;ve never tried &mdash; the 12 minutes is on me.</h2>
+        <p>I built Bankable because I watched too many good operators get the same vague no from the same banks. There&rsquo;s nothing wrong with your business. You&rsquo;ve been competing without the diagnostic. Run the scan. See your number. Read the plan. Let us install the systems. Then decide.</p>
+        <p><strong>&mdash; Kevin Murphy, Founder</strong></p>
+        <a class="btn btn-primary btn-arrow" href="#final-cta">Run Your Free Scan</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="logo-wrap" href="#top" aria-label="Bankable">
+          <svg aria-hidden="true"><use href="#bnkLogoWhite"/></svg>
+        </a>
+        <p>From your first dollar to your exit. One advisor. One platform. Seven installed systems.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+          <a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#hero">Bankable IQ scan</a></li>
+          <li><a href="#plan">Capital Growth Plan</a></li>
+          <li><a href="#systems">Bankable Score&trade;</a></li>
+          <li><a href="#coach">AI Coach</a></li>
+          <li><a href="#">Sign in</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>The Seven Systems</h4>
+        <ul>
+          <li><a href="#pillar-capital-readiness">Capital Readiness System</a></li>
+          <li><a href="#funding-system">Multi-Round Funding System</a></li>
+          <li><a href="#pillar-marketing">Growth Marketing System</a></li>
+          <li><a href="#pillar-financial">Financial Operating System</a></li>
+          <li><a href="#pillar-tax">Bankable Tax System</a></li>
+          <li><a href="#pillar-academy">Bankable Academy System</a></li>
+          <li><a href="#pillar-exit">Exit Readiness System</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>For You</h4>
+        <ul>
+          <li><a href="#">Plan + Start</a></li>
+          <li><a href="#">Manage + Grow</a></li>
+          <li><a href="#">Transition + Exit</a></li>
+          <li><a href="#advisor">For Advisors</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#guide">About</a></li>
+          <li><a href="#">1% Community</a></li>
+          <li><a href="#advisor">Become an Advisor</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="newsletter-input" style="margin-top: 18px;">
+          <input type="email" placeholder="Email for updates" aria-label="Email" />
+          <button type="button">Join</button>
+        </div>
+      </div>
+    </div>
+    <div class="compliance-block">
+      <p><strong>Bankable is an education and capital-readiness platform.</strong> Bankable is not a lender, broker, or credit-repair organization. Capital-readiness coaching is for informational purposes only and does not constitute legal, tax, accounting, investment, or lending advice. Lending decisions are made solely by independent lenders and partners.</p>
+      <p>The Bankable Score&trade; is an internal estimate based on user-supplied information; it is not a credit decision, FICO score, FICO SBSS score, or any other regulated consumer credit score, and it does not predict approval by any lender. Tax services are provided by Bankable&rsquo;s Service Bureau or partnered preparers under their own PTIN; tax outcomes vary by jurisdiction, entity, and facts.</p>
+      <p><strong>Composite stories and figures throughout this site are illustrative.</strong> Individual results vary. No outcome, approval, score change, or savings amount is guaranteed. Founding Cohort capacity is real and enforced at 500 seats; once filled, the founding rate closes and standard pricing applies.</p>
+      <p>Bankable is not a Multi-Level Marketing (MLM) company. Capital Readiness Advisors do not recruit, sponsor, or earn override compensation from other Advisors. Income is tied to client outcomes, not depth.</p>
+    </div>
+    <div class="footer-bottom">
+      <div>&copy; 2026 Bankable, Inc. All rights reserved.</div>
+      <div><a href="#">Privacy</a> &nbsp;&middot;&nbsp; <a href="#">Terms</a> &nbsp;&middot;&nbsp; <a href="#">Disclosures</a> &nbsp;&middot;&nbsp; <a href="#">Accessibility</a></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function() {
+  // Sticky header
+  var hdr = document.getElementById('siteHeader');
+  function onScroll() {
+    if (!hdr) return;
+    if (window.scrollY > 60) hdr.classList.add('scrolled');
+    else hdr.classList.remove('scrolled');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // Mobile menu
+  var menuToggle = document.getElementById('menuToggle');
+  var menu = document.getElementById('mobileMenu');
+  var menuClose = document.getElementById('menuClose');
+  function openMenu() { if (menu) { menu.classList.add('open'); menuToggle.setAttribute('aria-expanded','true'); } }
+  function closeMenu() { if (menu) { menu.classList.remove('open'); menuToggle.setAttribute('aria-expanded','false'); } }
+  if (menuToggle) menuToggle.addEventListener('click', openMenu);
+  if (menuClose) menuClose.addEventListener('click', closeMenu);
+  if (menu) menu.addEventListener('click', function(e) { if (e.target === menu) closeMenu(); });
+  if (menu) Array.prototype.forEach.call(menu.querySelectorAll('a'), function(a) { a.addEventListener('click', closeMenu); });
+
+  // Score ring sweep on load
+  var scoreFill = document.getElementById('scoreFill');
+  if (scoreFill) {
+    var score = 62;
+    var circumference = 2 * Math.PI * 92;
+    var offset = circumference - (score / 100) * circumference;
+    setTimeout(function() { scoreFill.setAttribute('stroke-dashoffset', offset); }, 200);
+  }
+
+  // Intersection observer for general reveals
+  var io = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.18 });
+
+  // Vendor blobs (jitter + reveal)
+  var vendorBlobs = document.querySelectorAll('#vendorBlobs .vendor-blob');
+  Array.prototype.forEach.call(vendorBlobs, function(b, i) {
+    b.style.transitionDelay = (i * 100) + 'ms';
+    io.observe(b);
+    setTimeout(function() { b.classList.add('jitter'); }, 1200 + i * 100);
+  });
+
+  // Plan cards (stagger)
+  var planCards = document.querySelectorAll('#planGrid .plan-card');
+  Array.prototype.forEach.call(planCards, function(c, i) {
+    c.style.transitionDelay = (i * 200) + 'ms';
+    io.observe(c);
+  });
+
+  // Install rows (sequential install effect)
+  var installRows = document.querySelectorAll('#installList .install-row');
+  var installIO = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        Array.prototype.forEach.call(installRows, function(r, i) {
+          setTimeout(function() { r.classList.add('in'); }, 250 + i * 360);
+        });
+        installIO.disconnect();
+      }
+    });
+  }, { threshold: 0.25 });
+  if (installRows.length) installIO.observe(installRows[0].parentElement);
+
+  // Count-up helper
+  function animateCount(el, target, duration, prefix, suffix) {
+    var start = 0;
+    var startTs = null;
+    prefix = prefix || '';
+    suffix = suffix || '';
+    function step(ts) {
+      if (!startTs) startTs = ts;
+      var progress = Math.min((ts - startTs) / duration, 1);
+      var eased = 1 - Math.pow(1 - progress, 3);
+      var value = Math.floor(start + (target - start) * eased);
+      el.textContent = prefix + value.toLocaleString() + suffix;
+      if (progress < 1) requestAnimationFrame(step);
+      else el.textContent = prefix + target.toLocaleString() + suffix;
+    }
+    requestAnimationFrame(step);
+  }
+
+  // Small stats band (#statsGrid)
+  var smallNums = document.querySelectorAll('#statsGrid .stat-num');
+  var smallIO = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        Array.prototype.forEach.call(smallNums, function(n) {
+          var t = parseInt(n.getAttribute('data-target') || '0', 10);
+          animateCount(n, t, 1600, '', n.getAttribute('data-suffix') || '');
+        });
+        smallIO.disconnect();
+      }
+    });
+  }, { threshold: 0.35 });
+  if (smallNums.length) smallIO.observe(smallNums[0].parentElement);
+
+  // Big stats band (#bigStatsGrid)
+  var bigNums = document.querySelectorAll('#bigStatsGrid .big-stat-num');
+  var bigIO = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        Array.prototype.forEach.call(bigNums, function(n) {
+          var t = parseInt(n.getAttribute('data-target') || '0', 10);
+          animateCount(n, t, 1800, n.getAttribute('data-prefix') || '', n.getAttribute('data-suffix') || '');
+        });
+        bigIO.disconnect();
+      }
+    });
+  }, { threshold: 0.3 });
+  if (bigNums.length) bigIO.observe(bigNums[0].parentElement);
+
+  // Multi-Round Funding timeline animation (line-draw + amount count-up)
+  var fundingTimeline = document.getElementById('fundingTimeline');
+  if (fundingTimeline) {
+    var fundingAmounts = fundingTimeline.querySelectorAll('.funding-event-amount');
+    var fundingIO = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          fundingTimeline.classList.add('in');
+          Array.prototype.forEach.call(fundingAmounts, function(el, i) {
+            var t = parseInt(el.getAttribute('data-target') || '0', 10);
+            setTimeout(function() {
+              var startTs = null;
+              function step(ts) {
+                if (!startTs) startTs = ts;
+                var prog = Math.min((ts - startTs) / 1400, 1);
+                var eased = 1 - Math.pow(1 - prog, 3);
+                var val = Math.floor(t * eased);
+                el.textContent = val >= 1000 ? '$' + (val / 1000).toFixed(1) + 'M' : '$' + val + 'k';
+                if (prog < 1) requestAnimationFrame(step);
+                else el.textContent = t >= 1000 ? '$' + (t / 1000).toFixed(1) + 'M' : '$' + t + 'k';
+              }
+              requestAnimationFrame(step);
+            }, 600 + i * 280);
+          });
+          fundingIO.disconnect();
+        }
+      });
+    }, { threshold: 0.25 });
+    fundingIO.observe(fundingTimeline);
+  }
+
+  // Nationwide map state-fill
+  var stateCells = document.querySelectorAll('#nationwideStates .state-cell');
+  var stateIO = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        Array.prototype.forEach.call(stateCells, function(c, i) {
+          setTimeout(function() { c.classList.add('lit'); }, 80 + i * 24);
+        });
+        stateIO.disconnect();
+      }
+    });
+  }, { threshold: 0.2 });
+  if (stateCells.length) stateIO.observe(stateCells[0].parentElement);
+
+  // Pricing toggle
+  var monthlyBtn = document.getElementById('pricingMonthly');
+  var annualBtn = document.getElementById('pricingAnnual');
+  var cohortPrice = document.getElementById('cohortPrice');
+  var cohortSavePill = document.getElementById('cohortSavePill');
+  function setMonthly() {
+    monthlyBtn.classList.add('active'); monthlyBtn.setAttribute('aria-selected','true');
+    annualBtn.classList.remove('active'); annualBtn.setAttribute('aria-selected','false');
+    if (cohortPrice) cohortPrice.innerHTML = '$97<small>&nbsp;/ month</small>';
+    if (cohortSavePill) cohortSavePill.style.display = 'none';
+  }
+  function setAnnual() {
+    annualBtn.classList.add('active'); annualBtn.setAttribute('aria-selected','true');
+    monthlyBtn.classList.remove('active'); monthlyBtn.setAttribute('aria-selected','false');
+    if (cohortPrice) cohortPrice.innerHTML = '$599<small>&nbsp;/ year</small>';
+    if (cohortSavePill) cohortSavePill.style.display = 'inline-flex';
+  }
+  if (monthlyBtn) monthlyBtn.addEventListener('click', setMonthly);
+  if (annualBtn) annualBtn.addEventListener('click', setAnnual);
+
+  // AI Coach typing effect on first reply (subtle)
+  var aiReply1Text = document.getElementById('aiReply1Text');
+  if (aiReply1Text && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    var full = aiReply1Text.textContent;
+    var coachIO = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          aiReply1Text.textContent = '';
+          var i = 0;
+          var iv = setInterval(function() {
+            i += 2;
+            aiReply1Text.textContent = full.slice(0, i);
+            if (i >= full.length) { aiReply1Text.textContent = full; clearInterval(iv); }
+          }, 18);
+          coachIO.disconnect();
+        }
+      });
+    }, { threshold: 0.4 });
+    coachIO.observe(aiReply1Text);
+  }
+})();
+</script>
+
+</body>
+</html>
+
